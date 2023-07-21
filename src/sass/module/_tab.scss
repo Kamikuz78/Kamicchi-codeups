@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 23px;
+  row-gap: 17px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tab-label {
+  min-width: rem(48);
+  text-align: center;
+  color: White;
+  padding: 2px 0;
+  order: -1;
+  font-size: rem(16);
+  letter-spacing: calc(2 / 16) * 1em;
+  @include mq(md) {
+    transition: 0.3s;
+  }
+}
+
+.tab-label:hover {
+  background-color: $white;
+  color: $gray;
+}
+
+.tab-label:not(:hover) {
+  text-decoration: none;
+}
+
+.tab-content {
+  width: 100%;
+  display: none;
+}
+/* アクティブなタブ */
+.tab-label.active {
+  background: $white;
+  color: $black;
+}
+.tab-switch:checked + .tab-label + .tab-content {
+  display: block;
+}
+/* ラジオボタン非表示 */
+.tab-switch {
+  display: none;
+}

@@ -1,0 +1,162 @@
+@use "global" as *;
+
+.header {
+  background-color: rgba($color: $black, $alpha: 0.5);
+  height: rem(50);
+  transition: 0.5s;
+}
+.header.header-another {
+  background-color: $black;
+  transition: 0.5s ease;
+}
+.header.header-drawer {
+  background-color: $black;
+  transition: color 0.4s linear;
+}
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 rem(22);
+  @include mq(md) {
+    padding: 0 0 0 rem(32);
+  }
+}
+
+.header__logo {
+  display: inline-flex;
+  height: inherit;
+  max-width: rem(70);
+  z-index: 1000;
+  object-fit: cover;
+  vertical-align: middle;
+  @include mq(md) {
+    max-width: rem(96);
+    width: 100%;
+  }
+}
+
+.header__link img {
+  height: 100%;
+  max-height: rem(26);
+  width: 100%;
+  aspect-ratio: 96 / 37;
+  @include mq(md) {
+    max-height: rem(37);
+  }
+}
+
+.header__link {
+  display: flex;
+  height: auto;
+  width: inherit;
+  padding-top: rem(2);
+  justify-content: center;
+  align-items: center;
+  @include mq(md) {
+    padding-top: rem(4);
+    transition: 0.5s;
+  }
+}
+
+.header__link:hover {
+  opacity: 0.5;
+}
+
+.header__drawer {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: $black;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.header__drawer::-webkit-scrollbar {
+  display: none;
+}
+
+.header__drawer-nav {
+  padding: rem(180) 0;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.header__drawer .is-open {
+  transform: translateX(0);
+}
+
+.header__drawer-items {
+  padding: rem(100) 0;
+  overflow: auto;
+  height: 100%;
+  letter-spacing: calc(2 / 18) * 1em;
+}
+
+.header__pc-nav {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: static;
+    transform: initial;
+    height: inherit;
+    width: auto;
+    background-color: transparent;
+  }
+}
+
+/* ハンバーガーメニュー_ボタン */
+.header__hamburger {
+  display: block;
+  position: relative;
+  z-index: 999;
+  padding: 0 rem(2);
+  height: inherit;
+  cursor: pointer;
+  @include mq(md) {
+    display: none;
+  }
+}
+.header__hamburger span {
+  position: relative;
+  display: block;
+  width: rem(24);
+  height: rem(2);
+  transition: 0.5s;
+  transition: 0.3s ease;
+  border-radius: rem(10);
+  background-color: $white;
+}
+
+.header__hamburger span:nth-child(1) {
+  top: rem(-6);
+}
+
+.header__hamburger span:nth-child(2) {
+  top: 0;
+}
+
+.header__hamburger span:nth-child(3) {
+  top: rem(6);
+}
+
+.header__hamburger.is-open :nth-child(1) {
+  top: rem(2);
+  transform: rotate(45deg);
+}
+
+.header__hamburger.is-open :nth-child(2) {
+  opacity: 0;
+}
+
+.header__hamburger.is-open :nth-child(3) {
+  top: rem(-2);
+  transform: rotate(-45deg);
+}

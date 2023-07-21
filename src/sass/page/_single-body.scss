@@ -1,0 +1,124 @@
+@use "global" as *;
+
+.single-body-layout {
+  margin-top: rem(76);
+  @include mq(md) {
+    margin-top: rem(91);
+  }
+}
+
+.single-body__inner {
+  width: 100%;
+  max-width: rem(600);
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md") {
+    max-width: rem(850);
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
+.single-body__title h1 {
+  font-size: rem(20);
+  line-height: rem(35);
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(23);
+    font-weight: $medium;
+    // line-height: calc(35 / 23);
+  }
+}
+
+.single-body__meta {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.single-body__image {
+  margin-top: rem(16);
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  aspect-ratio: 375 / 251;
+  @include mq(md) {
+    margin-top: rem(32);
+    margin-right: 0;
+    margin-left: 0;
+    aspect-ratio: 1598 / 854;
+  }
+}
+
+.single-body__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.single-body__content {
+  p {
+    font-size: rem(16);
+    line-height: rem(35);
+    letter-spacing: 0.4px;
+    margin-top: rem(24);
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+
+  h2 {
+    margin-top: rem(24);
+    font-size: rem(20);
+    font-weight: $regular;
+    letter-spacing: rem(2);
+    line-height: 1.5;
+    padding-left: rem(13);
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: rem(3);
+      height: 100%;
+      left: rem(2);
+      background-color: #c4c4c4;
+    }
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+
+  h3 {
+    margin-top: rem(24);
+    font-size: rem(18);
+    font-weight: $regular;
+    letter-spacing: rem(2);
+    padding-left: rem(10);
+    display: inline-block;
+    width: auto;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      height: rem(3);
+      background-image: linear-gradient(to right, #ffea2e 0 33%, #fff 33% 100%);
+      background-size: 100%;
+    }
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+}
+
+// .single-body__underline {
+//   background: linear-gradient(
+//     180deg,
+//     transparent 0%,
+//     transparent 75%,
+//     #FFEA2E 75%,
+//     #FFEA2E 90%,
+//     transparent 90%,
+//     transparent 100%
+//   );
+// }

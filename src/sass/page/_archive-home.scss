@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.archive-home {
+  // padding: rem(22) 0 rem(101);
+  // @include mq(md) {
+  //   padding: rem(32) 0 0;
+  // }
+  margin-top: rem(85);
+  @include mq(md) {
+    margin-top: rem(69);
+  }
+}
+
+.archive-home__inner.inner {
+  max-width: rem(910);
+}
+
+.archive-home__item:not(:first-child) {
+  margin-top: rem(32);
+}

@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.swiper {
+  height: inherit;
+  min-height: inherit;
+}
+.swiper-wrapper,
+.swiper-slide {
+  height: inherit;
+  min-height: inherit;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ページネーション配置の基準 */
+.swiper-container {
+  position: relative;
+}
+
+/* ページネーション カスタマイズ */
+.swiper-pagination {
+  text-align: center;
+  line-height: 0.5;
+  @include mq(md) {
+    padding-right: rem(38);
+  }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: rem(-16);
+  @include mq(md) {
+    bottom: rem(-27);
+  }
+}
+.swiper-pagination-bullet {
+  background-color: #f9f871;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 rem(5.5);
+}

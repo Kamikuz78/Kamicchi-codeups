@@ -1,0 +1,124 @@
+@use "global" as *;
+
+.common {
+  width: 100%;
+  @include mq(md) {
+    padding: rem(80) 0;
+    background: linear-gradient(90deg, transparent 0% calc(50% - rem(256)), #333 calc(50% - rem(256)) 100vw);
+  }
+}
+
+.common--reverse {
+  @include mq(md) {
+    background: linear-gradient(270deg, transparent 0% calc(50% - rem(256)), #333 calc(50% - rem(256)) 100vw);
+  }
+}
+
+.common__items {
+  width: 100%;
+  max-width: rem(600);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    display: flex;
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding: 0 25px;
+    justify-content: center;
+  }
+}
+
+.common--reverse .common__items {
+  @include mq(md) {
+    flex-direction: row-reverse;
+  }
+}
+.common--reverse .common__item-img {
+  @include mq(md) {
+    margin: 0 0 0 rem(31);
+  }
+}
+
+.common__item-img {
+  aspect-ratio: 375/261;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  @include mq(md) {
+    aspect-ratio: 557/389;
+    height: auto;
+    width: 50.6%;
+    margin: 0 rem(31) 0 0;
+  }
+}
+
+.common__item-img img {
+  aspect-ratio: 375/261;
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  @include mq(md) {
+    aspect-ratio: 557/389;
+  }
+}
+.common__item-text-box {
+  padding: rem(24) rem(20) rem(22);
+  background: $gray;
+  @include mq(md) {
+    margin-top: 0;
+    width: calc(512 / 1100) * 100%;
+    padding: 0;
+    letter-spacing: calc(0.5 / 16) * 1em;
+  }
+}
+
+.common__title {
+  font-size: rem(20);
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: calc(29 / 20);
+  letter-spacing: rem(2);
+  @include mq(md) {
+    margin-top: rem(34);
+    text-align: left;
+    font-size: rem(25);
+    line-height: 1;
+    letter-spacing: rem(0.5);
+  }
+}
+
+.common__text {
+  margin-top: rem(24);
+  line-height: calc(23 / 16);
+  letter-spacing: rem(2);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    margin-top: rem(44);
+    line-height: calc(35 / 16);
+    letter-spacing: rem(0.5);
+  }
+}
+
+.common__button-wrapper {
+  margin-top: rem(26);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(48);
+    text-align: left;
+  }
+}
+
+.common__item-img.swiper-slide img {
+  width: 100%;
+  aspect-ratio: 375/261;
+  height: inherit;
+  min-height: inherit;
+  @include mq(md) {
+    aspect-ratio: 557/389;
+  }
+}

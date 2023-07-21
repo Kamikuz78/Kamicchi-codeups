@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.blog-cards {
+  display: grid;
+  gap: rem(24) rem(25);
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(48) rem(25);
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+.blog-cards__item {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  color: $black;
+  transition: 0.5s;
+  justify-content: space-between;
+  @include mq(md) {
+    &:hover {
+      color: $white;
+      background-color: $gray;
+    }
+  }
+}

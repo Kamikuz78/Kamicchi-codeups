@@ -1,0 +1,75 @@
+@use "global" as *;
+
+.news {
+  padding: rem(22) 0 rem(101);
+  @include mq(md) {
+    padding: rem(32) 0 0;
+  }
+}
+
+.news__inner {
+  margin: 0 auto;
+  max-width: rem(600);
+  @include mq(md) {
+    max-width: rem(1150);
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.news__items {
+  margin: 0 rem(19.5);
+  @include mq(md) {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.news__button-wrapper {
+  margin-top: rem(27);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  @include mq(md) {
+    max-width: rem(134);
+    margin: rem(1) 0 0 rem(45);
+    display: flex;
+    justify-content: start;
+  }
+}
+
+.news__button {
+  @include mq(md) {
+    font-size: rem(16);
+    background-color: $white;
+    padding: rem(2.3) rem(10);
+    max-width: rem(134);
+    color: $black;
+    letter-spacing: normal;
+    line-height: 1.5;
+    align-self: flex-start;
+  }
+}
+
+.news__button:hover {
+  color: $white;
+  background-color: $gray;
+}
+
+.news__button::before {
+  @include mq(md) {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: $gray;
+    transform-origin: 0% 50%;
+    transform: scaleX(0);
+    transition: transform ease-out 0.3s;
+  }
+}

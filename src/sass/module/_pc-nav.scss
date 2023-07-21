@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.pc-nav__items {
+  padding: 0;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pc-nav__item,
+.pc-nav__item a {
+  height: inherit;
+}
+
+.pc-nav__item a {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding: 0 rem(15);
+  letter-spacing: calc(2 / 16) * 1em;
+  position: relative;
+}
+.pc-nav__item:last-child a {
+  padding: 0 rem(31);
+}
+
+.pc-nav__item--white {
+  color: $gray;
+  background: $white;
+  @include mq(md) {
+    transition: all 0.5s ease 0s;
+    margin-left: rem(15);
+  }
+}
+.pc-nav__item--white:hover {
+  transition: all 0.5s ease 0s;
+  color: $white;
+  background-color: $gray;
+}
+
+li:not(:last-child).pc-nav__item a::after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: calc(100% - 1rem);
+  height: rem(1);
+  background: #ffea2e;
+  bottom: rem(6);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+li:not(:last-child).pc-nav__item a:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+}

@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.content-card {
+  width: auto;
+  overflow: hidden;
+  aspect-ratio: 188 / 168;
+  @include mq(md) {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.content-card__link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+  display: inline-block;
+  vertical-align: top;
+  @include mq(md) {
+    transition: 0.5s;
+  }
+}
+
+.content-card__link::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @include mq(md) {
+    transition: background-color 0.5s;
+  }
+}
+
+.content-card__img {
+  height: 100%;
+  width: 100%;
+}
+.content-card__link img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left rem(-15);
+  @include mq(md) {
+    object-position: initial;
+  }
+}
+
+.content-card__link:hover::after {
+  background: rgba(#fff, 0.6);
+}
+
+.content-card__title {
+  color: $white;
+  font-size: rem(20);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  letter-spacing: rem(2);
+  line-height: calc(29 / 28);
+  transform: translate(-50%, -50%);
+  @include mq(md) {
+    font-size: rem(25);
+  }
+}

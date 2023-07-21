@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.mv {
+  min-height: rem(600);
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+  @include mq(md) {
+    min-height: rem(850);
+  }
+}
+
+/* ズーム */
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.mv__swiper {
+  .swiper-slide-active img,
+  .swiper-slide-duplicate-active img,
+  .swiper-slide-prev img {
+    animation: zoomUp 10s linear 0s normal both;
+  }
+}
+.mv__swiper {
+  // height: 100vh;
+  min-height: rem(600);
+  overflow: hidden;
+}
+
+.mv__inner {
+  min-height: inherit;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.mv img {
+  height: 100vh;
+  min-height: rem(600);
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: auto 375 / 770;
+  @include mq(md) {
+    min-height: rem(850);
+    aspect-ratio: 1280 / 850;
+  }
+}
+
+.mv__title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  letter-spacing: rem(0.5);
+  line-height: 1;
+  font-weight: $bold;
+}
+
+.mv__title-main {
+  font-size: rem(28);
+  @include mq(md) {
+    font-size: rem(50);
+  }
+}
+
+.mv__title-sub {
+  font-size: rem(20);
+  margin-top: rem(24);
+  @include mq(md) {
+    font-size: rem(25);
+  }
+}
+.slick-slide {
+  min-height: rem(600);
+}

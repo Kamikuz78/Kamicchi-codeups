@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.section-title {
+  position: relative;
+  line-height: 1;
+  max-width: $inner;
+  margin: 0 auto;
+  @include mq(md) {
+    max-width: rem(1150);
+    padding: 0 25px;
+  }
+}
+
+.main-title {
+  font-size: rem(20);
+  letter-spacing: calc(2 / 20) * 1em;
+  text-align: center;
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(30);
+    letter-spacing: calc(0.5 / 30) * 1em;
+  }
+}
+.sub-title {
+  font-size: rem(50);
+  font-family: $second-font-family;
+  color: $yellow;
+  letter-spacing: rem(2);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+  text-transform: capitalize;
+  z-index: -1;
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(110);
+    transform: initial;
+    left: 0;
+    padding: 0 rem(25);
+  }
+}
+
+.subtitle--right {
+  @include mq(md) {
+    left: initial;
+    right: 0;
+  }
+}

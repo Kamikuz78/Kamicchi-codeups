@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.breadcrumb__body {
+  display: flex;
+  gap: 0 7px;
+  list-style: none;
+  padding: 0;
+  font-size: rem(16);
+  letter-spacing: calc(2 / 16) * 1em;
+}
+
+.breadcrumb__body li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb__body li:not(:last-child)::after {
+  display: inline-block;
+  transform: rotate(45deg);
+  width: 0.5em;
+  height: 0.5em;
+  margin-left: 10px;
+  border-top: 1px solid $white;
+  border-right: 1px solid $white;
+  content: "";
+}
+
+.breadcrumb__body a {
+  color: $white;
+}

@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: rem(14);
+  line-height: calc(26 / 14);
+}
+
+.info__category {
+  background-color: #ffea2e;
+  color: $black;
+  padding: 0 rem(5);
+  letter-spacing: calc(1 / 14) * 1em;
+}

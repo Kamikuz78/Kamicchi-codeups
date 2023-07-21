@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.archive-home-pagination {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(104);
+  }
+}
+
+.archive-home {
+  .news-content__text {
+    transition: color 1s;
+  }
+
+  .news-content__text:hover {
+    @include mq(md) {
+      color: yellow;
+      transition: color 0.5s;
+    }
+  }
+}

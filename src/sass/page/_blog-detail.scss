@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.blog-detail__breadcrumb {
+  margin-top: rem(66);
+}
+
+.blog-detail__pagination {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(104);
+  }
+}

@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.content-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
