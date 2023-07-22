@@ -3,21 +3,27 @@
 .tab {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 23px;
+  column-gap: 20px;
   row-gap: 17px;
   align-items: center;
+  letter-spacing: rem(2);
   justify-content: flex-start;
+  @include mq(md) {
+    column-gap: rem(29);
+  }
 }
 .tab-label {
   min-width: rem(48);
   text-align: center;
   color: White;
-  padding: 2px 0;
+  padding: rem(2) rem(8);
   order: -1;
   font-size: rem(16);
+  line-height: calc(30 / 16) * 1rem;
   letter-spacing: calc(2 / 16) * 1em;
   @include mq(md) {
     transition: 0.3s;
+    padding: rem(2) rem(10);
   }
 }
 

@@ -40,7 +40,7 @@
 
 .header__link img {
   height: 100%;
-  max-height: rem(26);
+  max-height: rem(27);
   width: 100%;
   aspect-ratio: 96 / 37;
   @include mq(md) {
@@ -117,7 +117,7 @@
   display: block;
   position: relative;
   z-index: 999;
-  padding: 0 rem(2);
+  padding: 0 0;
   height: inherit;
   cursor: pointer;
   @include mq(md) {
