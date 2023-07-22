@@ -3,8 +3,8 @@
 .tab {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 17px;
+  column-gap: rem(13);
+  row-gap: rem(14);
   align-items: center;
   letter-spacing: rem(2);
   justify-content: flex-start;
@@ -12,27 +12,28 @@
     column-gap: rem(29);
   }
 }
-.tab-label {
-  min-width: rem(48);
+.tab__label {
   text-align: center;
   color: White;
-  padding: rem(2) rem(8);
+  padding: rem(7) rem(8);
   order: -1;
   font-size: rem(16);
-  line-height: calc(30 / 16) * 1rem;
+  line-height: 1;
   letter-spacing: calc(2 / 16) * 1em;
+  border-bottom: solid 1px #000;
   @include mq(md) {
     transition: 0.3s;
     padding: rem(2) rem(10);
+    border-bottom: none;
   }
 }
 
-.tab-label:hover {
+.tab__label:hover {
   background-color: $white;
   color: $gray;
 }
 
-.tab-label:not(:hover) {
+.tab__label:not(:hover) {
   text-decoration: none;
 }
 
@@ -41,11 +42,11 @@
   display: none;
 }
 /* アクティブなタブ */
-.tab-label.active {
+.tab__label.active {
   background: $white;
   color: $black;
 }
-.tab-switch:checked + .tab-label + .tab-content {
+.tab-switch:checked + .tab__label + .tab-content {
   display: block;
 }
 /* ラジオボタン非表示 */

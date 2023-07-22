@@ -9,10 +9,3 @@
     text-align: center;
   }
 }
-
-.page-blog-pagination {
-  margin-top: rem(80);
-  @include mq(md) {
-  }
-  mask-type: rem(104);
-}
