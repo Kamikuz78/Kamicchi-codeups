@@ -293,8 +293,8 @@ select::-ms-expand {
 
 .blog-cards {
   display: grid;
-  gap: 24px 25px;
-  gap: 1.5rem 1.5625rem;
+  gap: 25px 25px;
+  gap: 1.5625rem 1.5625rem;
 }
 @media screen and (min-width: 768px) {
   .blog-cards {
@@ -442,8 +442,8 @@ select::-ms-expand {
 }
 
 .breadcrumb__arrow {
-  margin-left: 3px;
-  margin-left: 0.1875rem;
+  margin-left: 2px;
+  margin-left: 0.125rem;
 }
 
 .circle {
@@ -1772,6 +1772,8 @@ select::-ms-expand {
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
   font-weight: 400;
+  padding: 3px 10px;
+  padding: 0.1875rem 0.625rem;
 }
 
 .pagination__item--prev {
@@ -2069,10 +2071,11 @@ li:not(:last-child).pc-nav__item a:hover::after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
-  row-gap: 17px;
+  -webkit-column-gap: 0.5rem;
+     -moz-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 12px;
+  row-gap: 0.75rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2132,15 +2135,6 @@ li:not(:last-child).pc-nav__item a:hover::after {
 .tab-label.active {
   background: #fff;
   color: #111;
-}
-
-.tab-switch:checked + .tab-label + .tab-content {
-  display: block;
-}
-
-/* ラジオボタン非表示 */
-.tab-switch {
-  display: none;
 }
 
 .top-button {
@@ -2287,16 +2281,6 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
-.blog-tab-layout {
-  margin-top: 82px;
-  margin-top: 5.125rem;
-}
-@media screen and (min-width: 768px) {
-  .blog-tab-layout {
-    margin-top: 6.9375rem;
-  }
-}
-
 .breadcrumb-layout {
   margin-top: 12px;
   margin-top: 0.75rem;
@@ -2338,13 +2322,8 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
-.sub-blog__items {
-  margin-top: 37px;
-  margin-top: 2.3125rem;
-}
 @media screen and (min-width: 768px) {
   .sub-blog__items {
-    margin-top: 2.5rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2358,8 +2337,13 @@ li:not(:last-child).pc-nav__item a:hover::after {
 .page-blog-pagination {
   margin-top: 80px;
   margin-top: 5rem;
-  mask-type: 6.5rem;
 }
+@media screen and (min-width: 768px) {
+  .page-blog-pagination {
+    margin-top: 6.5rem;
+  }
+}
+
 .single-body-layout {
   margin-top: 76px;
   margin-top: 4.75rem;
@@ -2500,6 +2484,26 @@ li:not(:last-child).pc-nav__item a:hover::after {
 @media screen and (min-width: 768px) {
   .single-body__content h3 {
     margin-top: 2rem;
+  }
+}
+
+.sub-blog-layout {
+  margin-top: 35px;
+  margin-top: 2.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .sub-blog-layout {
+    margin-top: 2.5rem;
+  }
+}
+
+.tab-layout {
+  margin-top: 78px;
+  margin-top: 4.875rem;
+}
+@media screen and (min-width: 768px) {
+  .tab-layout {
+    margin-top: 6.9375rem;
   }
 }
 

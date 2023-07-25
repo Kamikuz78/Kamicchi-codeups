@@ -3,8 +3,8 @@
 .tab {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 17px;
+  column-gap: rem(8);
+  row-gap: rem(12);
   align-items: center;
   letter-spacing: rem(2);
   justify-content: flex-start;
@@ -44,11 +44,4 @@
 .tab-label.active {
   background: $white;
   color: $black;
-}
-.tab-switch:checked + .tab-label + .tab-content {
-  display: block;
-}
-/* ラジオボタン非表示 */
-.tab-switch {
-  display: none;
 }
