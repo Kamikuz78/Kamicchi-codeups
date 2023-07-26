@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.single-body-layout {
-  margin-top: rem(76);
-  @include mq(md) {
-    margin-top: rem(91);
-  }
-}
-
 .single-body__inner {
   width: 100%;
   max-width: rem(600);
@@ -25,22 +18,22 @@
   font-size: rem(20);
   line-height: rem(35);
   font-weight: $regular;
+  letter-spacing: rem(0.4);
   @include mq(md) {
     font-size: rem(23);
     font-weight: $medium;
-    // line-height: calc(35 / 23);
   }
 }
 
 .single-body__meta {
-  margin-top: rem(24);
+  margin-top: rem(14);
   @include mq(md) {
     margin-top: rem(24);
   }
 }
 
 .single-body__image {
-  margin-top: rem(16);
+  // margin-top: rem(16);
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   aspect-ratio: 375 / 251;
@@ -58,18 +51,21 @@
 }
 
 .single-body__content {
+  margin-top: rem(16);
+  display: grid;
+  gap: rem(24);
   p {
     font-size: rem(16);
     line-height: rem(35);
     letter-spacing: 0.4px;
-    margin-top: rem(24);
+    // margin-top: rem(24);
     @include mq(md) {
       margin-top: rem(32);
     }
   }
 
   h2 {
-    margin-top: rem(24);
+    // margin-top: rem(24);
     font-size: rem(20);
     font-weight: $regular;
     letter-spacing: rem(2);
@@ -90,14 +86,15 @@
   }
 
   h3 {
-    margin-top: rem(24);
+    // margin-top: rem(24);
     font-size: rem(18);
     font-weight: $regular;
     letter-spacing: rem(2);
     padding-left: rem(10);
     display: inline-block;
-    width: auto;
-    position: relative;
+    // width: auto;
+    line-height: 1.4;
+    // position: relative;
     &:after {
       content: "";
       display: block;
@@ -111,14 +108,15 @@
   }
 }
 
-// .single-body__underline {
-//   background: linear-gradient(
-//     180deg,
-//     transparent 0%,
-//     transparent 75%,
-//     #FFEA2E 75%,
-//     #FFEA2E 90%,
-//     transparent 90%,
-//     transparent 100%
-//   );
-// }
+.single-body__underline {
+  position: relative;
+  // background: linear-gradient(
+  //   180deg,
+  //   transparent 0%,
+  //   transparent 75%,
+  //   #FFEA2E 75%,
+  //   #FFEA2E 90%,
+  //   transparent 90%,
+  //   transparent 100%
+  // );
+}
