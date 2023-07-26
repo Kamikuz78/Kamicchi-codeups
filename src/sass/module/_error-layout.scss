@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.error-layout {
+  margin-top: rem(125);
+  @include mq(md) {
+    margin-top: rem(183);
+  }
+}
