@@ -86,9 +86,15 @@
   font-weight: $regular;
   letter-spacing: calc(1.2 / 11) * 1em;
   @include mq(md) {
-    margin-top: rem(56);
+    margin-top: rem(65);
     font-size: rem(15);
     line-height: rem(35);
-    letter-spacing: calc(1.2 / 15) * 1em;
+    letter-spacing: rem(1.2);
+  }
+}
+
+.footer__copyright--top {
+  @include mq(md) {
+    margin-top: rem(56);
   }
 }

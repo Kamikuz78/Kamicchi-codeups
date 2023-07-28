@@ -28,18 +28,23 @@
 .single-body__meta {
   margin-top: rem(14);
   @include mq(md) {
-    margin-top: rem(24);
+    margin-top: rem(31);
+  }
+}
+
+.single-body__box {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(32);
   }
 }
 
 .single-body__image {
-  // margin-top: rem(16);
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   aspect-ratio: 375 / 251;
   object-fit: cover;
   @include mq(md) {
-    margin-top: rem(32);
     margin-right: 0;
     margin-left: 0;
     aspect-ratio: 799 / 427;
@@ -55,13 +60,18 @@
   margin-top: rem(16);
   display: grid;
   gap: rem(24);
+  @include mq(md) {
+    margin-top: rem(32);
+    gap: rem(32);
+  }
+
   p {
-    font-size: rem(16);
+    // font-size: rem(16);
     line-height: rem(35);
     letter-spacing: 0.4px;
     // margin-top: rem(24);
     @include mq(md) {
-      margin-top: rem(32);
+      // margin-top: rem(32);
     }
   }
 
@@ -82,42 +92,27 @@
       background-color: #c4c4c4;
     }
     @include mq(md) {
-      margin-top: rem(32);
+      padding-left: rem(9);
     }
   }
 
   h3 {
-    // margin-top: rem(24);
     font-size: rem(18);
     font-weight: $regular;
     letter-spacing: rem(2);
-    padding-left: rem(10);
-    display: inline-block;
-    // width: auto;
+    padding-left: rem(9);
+    display: block;
     line-height: 1.4;
-    // position: relative;
-    &:after {
-      content: "";
-      display: block;
-      height: rem(3);
-      background-image: linear-gradient(to right, #ffea2e 0 33%, #fff 33% 100%);
-      background-size: 100%;
-    }
     @include mq(md) {
-      margin-top: rem(32);
+      line-height: 1.4;
     }
   }
 }
 
 .single-body__underline {
-  position: relative;
-  // background: linear-gradient(
-  //   180deg,
-  //   transparent 0%,
-  //   transparent 75%,
-  //   #FFEA2E 75%,
-  //   #FFEA2E 90%,
-  //   transparent 90%,
-  //   transparent 100%
-  // );
+  background-image: linear-gradient(to right, #ffea2e 0 25%, #fff 25%);
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: bottom;
+  padding-bottom: rem(2);
 }
