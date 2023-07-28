@@ -2429,13 +2429,15 @@ li:not(:last-child).pc-nav__item a:hover::after {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   aspect-ratio: 375/251;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .single-body__image {
     margin-top: 2rem;
     margin-right: 0;
     margin-left: 0;
-    aspect-ratio: 1598/854;
+    aspect-ratio: 799/427;
   }
 }
 

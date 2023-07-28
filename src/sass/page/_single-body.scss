@@ -44,11 +44,12 @@
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   aspect-ratio: 375 / 251;
+  object-fit: cover;
   @include mq(md) {
     margin-top: rem(32);
     margin-right: 0;
     margin-left: 0;
-    aspect-ratio: 1598 / 854;
+    aspect-ratio: 799 / 427;
   }
 }
 
