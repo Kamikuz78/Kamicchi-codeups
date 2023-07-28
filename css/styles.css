@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* リキッドレイアウト対応 */
 body {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -36,7 +37,6 @@ body {
   display: none;
 }
 
-/* リキッドレイアウト対応 */
 html {
   font-size: 16px;
 }
@@ -210,8 +210,8 @@ select::-ms-expand {
 }
 
 .blog-card__body {
-  padding-top: 3px;
-  padding-top: 0.1875rem;
+  padding-top: 4px;
+  padding-top: 0.25rem;
   padding-left: 23px;
   padding-left: 1.4375rem;
   padding-right: 23px;
@@ -233,11 +233,6 @@ select::-ms-expand {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (min-width: 768px) {
-  .blog-card__body {
-    padding-top: 0.25rem;
-  }
-}
 
 .blog-card__img {
   aspect-ratio: 350/233;
@@ -257,7 +252,7 @@ select::-ms-expand {
   font-weight: 500;
   text-align: left;
   width: 100%;
-  line-height: 2;
+  line-height: 1.8888888889;
   letter-spacing: 0.0555555556em;
 }
 @media screen and (min-width: 768px) {
@@ -269,9 +264,9 @@ select::-ms-expand {
 .blog-card__text {
   font-size: 14px;
   font-size: 0.875rem;
-  margin-top: 1px;
-  margin-top: 0.0625rem;
-  line-height: 2;
+  margin-top: 5px;
+  margin-top: 0.3125rem;
+  line-height: 1.8571428571;
   text-align: left;
   letter-spacing: 0.0714285714em;
   -webkit-box-flex: 1;
@@ -287,8 +282,8 @@ select::-ms-expand {
 
 .blog-card__info {
   margin-top: auto;
-  padding: 3px 23px 16px;
-  padding: 0.1875rem 1.4375rem 1rem;
+  padding: 5px 23px 16px;
+  padding: 0.3125rem 1.4375rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .blog-card__info {
@@ -2190,35 +2185,36 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
-.tab__label {
+.tab-label {
+  min-width: 48px;
+  min-width: 3rem;
   text-align: center;
   color: White;
-  padding: 7px 8px;
-  padding: 0.4375rem 0.5rem;
+  padding: 2px 8px;
+  padding: 0.125rem 0.5rem;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1;
+  line-height: 30px;
+  line-height: 1.875rem;
   letter-spacing: 0.125em;
-  border-bottom: solid 1px #000;
 }
 @media screen and (min-width: 768px) {
-  .tab__label {
+  .tab-label {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding: 0.125rem 0.625rem;
-    border-bottom: none;
   }
 }
 
-.tab__label:hover {
+.tab-label:hover {
   background-color: #fff;
   color: #333333;
 }
 
-.tab__label:not(:hover) {
+.tab-label:not(:hover) {
   text-decoration: none;
 }
 
@@ -2228,18 +2224,9 @@ li:not(:last-child).pc-nav__item a:hover::after {
 }
 
 /* アクティブなタブ */
-.tab__label.active {
+.tab-label.active {
   background: #fff;
   color: #111;
-}
-
-.tab-switch:checked + .tab-label + .tab-content {
-  display: block;
-}
-
-/* ラジオボタン非表示 */
-.tab-switch {
-  display: none;
 }
 
 .top-button {
@@ -2393,16 +2380,6 @@ li:not(:last-child).pc-nav__item a:hover::after {
 @media screen and (min-width: 768px) {
   .blog-layout {
     margin-top: 13.0625rem;
-  }
-}
-
-.blog-pagination-layout {
-  margin-top: 80px;
-  margin-top: 5rem;
-}
-@media screen and (min-width: 768px) {
-  .blog-pagination-layout {
-    margin-top: 6.5rem;
   }
 }
 
@@ -2602,15 +2579,13 @@ li:not(:last-child).pc-nav__item a:hover::after {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   aspect-ratio: 375/251;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .single-body__image {
     margin-top: 2rem;
     margin-right: 0;
     margin-left: 0;
-    aspect-ratio: 799/427;
+    aspect-ratio: 1598/854;
   }
 }
 
@@ -2742,7 +2717,7 @@ li:not(:last-child).pc-nav__item a:hover::after {
 }
 @media screen and (min-width: 768px) {
   .tab-layout {
-    margin-top: 7.375rem;
+    margin-top: 6.9375rem;
   }
 }
 
