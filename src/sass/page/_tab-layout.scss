@@ -1,7 +1,7 @@
 @use "global" as *;
 
-.blog-tab-layout {
-  margin-top: rem(82);
+.tab-layout {
+  margin-top: rem(78);
   @include mq(md) {
     margin-top: rem(118);
   }

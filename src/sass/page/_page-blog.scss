@@ -1,11 +1,16 @@
 @use "global" as *;
 
 .sub-blog__items {
-  margin-top: rem(37);
   @include mq(md) {
-    margin-top: rem(40);
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+  }
+}
+
+.page-blog-pagination {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(104);
   }
 }

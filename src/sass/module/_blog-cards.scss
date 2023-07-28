@@ -2,7 +2,7 @@
 
 .blog-cards {
   display: grid;
-  gap: rem(24) rem(25);
+  gap: rem(25) rem(25);
   @include mq(md) {
     grid-template-columns: repeat(3, 1fr);
     gap: rem(48) rem(25);
@@ -24,5 +24,11 @@
       color: $white;
       background-color: $gray;
     }
+  }
+}
+
+.blog-cards--related {
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

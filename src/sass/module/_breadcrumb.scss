@@ -2,7 +2,7 @@
 
 .breadcrumb__body {
   display: flex;
-  gap: 0 rem(1);
+  gap: 0 rem(5);
   list-style: none;
   padding: 0;
   font-size: rem(16);
@@ -14,20 +14,11 @@
   align-items: center;
 }
 
-// .breadcrumb__body li:not(:last-child)::after {
-//   display: inline-block;
-//   transform: rotate(45deg);
-//   width: 0.5em;
-//   height: 0.5em;
-//   margin-left: 10px;
-//   border-top: 1px solid $white;
-//   border-right: 1px solid $white;
-//   content: "";
-// }
-
 .breadcrumb__body a {
   color: $white;
 }
+
 .breadcrumb__arrow {
-  margin-left: rem(3);
+  // margin-left: rem(2);
+  // margin-right: rem(2);
 }

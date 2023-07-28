@@ -10,3 +10,10 @@
     margin-top: rem(104);
   }
 }
+
+.blog-detail__button-wrapper {
+  margin-top: rem(120);
+  @include mq(md) {
+    margin-top: rem(104);
+  }
+}

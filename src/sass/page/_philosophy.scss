@@ -1,0 +1,6 @@
+@use "global" as *;
+
+.philosophy__list {
+  display: grid;
+  row-gap: rem(30);
+}
