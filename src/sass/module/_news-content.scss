@@ -12,7 +12,7 @@
 .news-content__info {
   display: flex;
   align-items: center;
-  gap: rem(32);
+  gap: rem(29);
   @include mq(md) {
     gap: rem(48);
   }
@@ -26,8 +26,8 @@
 .news-content__category {
   font-size: rem(14);
   font-weight: $regular;
-  line-height: calc(20 / 14);
-  padding: rem(6) rem(21);
+  line-height: 1;
+  padding: rem(7.5) rem(21);
   border: 1px solid $white;
   flex-shrink: 0;
   @include mq(md) {
@@ -38,7 +38,7 @@
 
 .news-content__link {
   display: inline-block;
-  margin-top: rem(14);
+  margin-top: rem(16);
   @include mq(md) {
     margin-top: rem(4);
     margin-left: rem(60);
@@ -47,18 +47,28 @@
   }
 }
 
-.news{
-.news-content__link {
-  position: relative;
-  text-decoration: none;
-  background: linear-gradient(90deg, $white, $white);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 0 1px;
-  transition: background 0.3s;
+.news-content__text {
+  line-height: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  @include mq(md) {
+    line-height: 1.5;
+  }
 }
+
+.news {
+  .news-content__link {
+    position: relative;
+    text-decoration: none;
+    background: linear-gradient(90deg, $white, $white);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 0 1px;
+    transition: background 0.3s;
+  }
 }
 .news-content__link:hover {
   background-size: 100% 1px;
 }
-

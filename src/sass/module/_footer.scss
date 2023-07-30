@@ -7,6 +7,12 @@
   }
 }
 
+.footer--sub {
+  @include mq(md) {
+    padding: rem(23) 0;
+  }
+}
+
 .footer__inner {
   @include mq(md) {
     padding: 0 rem(16) 0 rem(32);

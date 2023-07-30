@@ -23,7 +23,7 @@
   border-bottom: solid 1px #000;
   @include mq(md) {
     transition: 0.3s;
-    padding: rem(2) rem(10);
+    padding: rem(18) rem(10);
     border-bottom: none;
   }
 }
@@ -42,14 +42,7 @@
   display: none;
 }
 /* アクティブなタブ */
-.tab__label.active {
+.tab-label.active {
   background: $white;
   color: $black;
-}
-.tab-switch:checked + .tab-label + .tab-content {
-  display: block;
-}
-/* ラジオボタン非表示 */
-.tab-switch {
-  display: none;
 }
