@@ -11,7 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   @include mq(md) {
-    margin: 0 rem(90);
+    margin: 0 rem(66);
   }
 }
 
@@ -37,7 +37,8 @@
   z-index: -1;
   @include mq(md) {
     height: calc(1712 / 1280) * 100vw;
-    top: rem(-150);
+    // top: rem(-150);
+    top: -150px;
     right: rem(68);
     transform: rotate(45deg);
   }

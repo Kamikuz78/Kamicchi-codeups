@@ -46,7 +46,7 @@
 .blog-card__text {
   font-size: rem(14);
   margin-top: rem(1);
-  line-height: 2;
+  line-height: rem(26);
   text-align: left;
   letter-spacing: calc(1 / 14) * 1em;
   flex-grow: 1;
@@ -58,7 +58,7 @@
 
 .blog-card__info {
   margin-top: auto;
-  padding: rem(3) rem(23) rem(16);
+  padding: rem(7) rem(23) rem(16);
   @include mq(md) {
     padding: rem(5) rem(23) rem(16);
   }

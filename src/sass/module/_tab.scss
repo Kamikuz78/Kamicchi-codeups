@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: rem(8);
-  row-gap: rem(12);
+  row-gap: rem(14);
   align-items: center;
   letter-spacing: rem(2);
   justify-content: flex-start;
@@ -16,10 +16,9 @@
   text-align: center;
   color: White;
   padding: rem(7) rem(8);
-  order: -1;
   font-size: rem(16);
   line-height: 1;
-  letter-spacing: calc(2 / 16) * 1em;
+  letter-spacing: rem(2);
   border-bottom: solid 1px #000;
   @include mq(md) {
     transition: 0.3s;
