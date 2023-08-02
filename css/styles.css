@@ -859,6 +859,13 @@ select::-ms-expand {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contact__text.contact__text--sub {
+    margin-top: 31px;
+    margin-top: 1.9375rem;
+  }
+}
+
 .contact__button-wrapper {
   text-align: center;
   margin-top: 47px;
@@ -871,6 +878,10 @@ select::-ms-expand {
   }
 }
 
+.contact__button-wrapper.contact__button-wrapper--sub {
+  margin-top: 43px;
+  margin-top: 2.6875rem;
+}
 @media screen and (min-width: 768px) {
   .contact__button-wrapper.contact__button-wrapper--sub {
     margin-top: 54px;
@@ -1064,14 +1075,21 @@ select::-ms-expand {
   }
 }
 
-.footer {
-  padding: 52px 0 60px;
-  padding: 3.25rem 0 3.75rem;
+.footer-layout {
+  margin: 52px 0 60px;
+  margin: 3.25rem 0 3.75rem;
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    padding: 25px 0 29.4px;
-    padding: 1.5625rem 0 1.8375rem;
+  .footer-layout {
+    margin: 25px 0 29.4px;
+    margin: 1.5625rem 0 1.8375rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-layout.footer-layout--sub {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -1177,8 +1195,8 @@ select::-ms-expand {
 }
 
 .footer__copyright {
-  margin-top: 32px;
-  margin-top: 2rem;
+  margin-top: 28px;
+  margin-top: 1.75rem;
   font-size: 11px;
   font-size: 0.6875rem;
   line-height: 16px;
@@ -2523,8 +2541,8 @@ li:not(:last-child).pc-nav__item a:hover::after {
 }
 
 .top-button-layout.top-button-layout--sub {
-  right: 20px;
-  right: 1.25rem;
+  right: 21px;
+  right: 1.3125rem;
 }
 @media screen and (min-width: 768px) {
   .top-button-layout.top-button-layout--sub {

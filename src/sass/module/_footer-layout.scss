@@ -1,2 +1,14 @@
 @use "global" as *;
 
+.footer-layout {
+  margin: rem(52) 0 rem(60);
+  @include mq(md) {
+    margin: rem(25) 0 rem(29.4);
+  }
+}
+
+.footer-layout.footer-layout--sub {
+  @include mq(md) {
+    margin-bottom: rem(20);
+  }
+}

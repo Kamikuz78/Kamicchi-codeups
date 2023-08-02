@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.footer {
-  padding: rem(52) 0 rem(60);
-  @include mq(md) {
-    padding: rem(25) 0 rem(29.4);
-  }
-}
+// .footer {
+//   padding: rem(52) 0 rem(60);
+//   @include mq(md) {
+//     padding: rem(25) 0 rem(29.4);
+//   }
+// }
 
 .footer--sub {
   @include mq(md) {
@@ -85,7 +85,7 @@
 }
 
 .footer__copyright {
-  margin-top: rem(32);
+  margin-top: rem(28);
   font-size: rem(11);
   line-height: rem(16);
   text-align: center;

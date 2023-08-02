@@ -13,8 +13,6 @@
   z-index: 1;
 }
 
-
-
 .contact__subtitle {
   top: rem(-42);
   @include mq(md) {
@@ -35,6 +33,13 @@
     text-align: center;
   }
 }
+
+.contact__text.contact__text--sub {
+  @include mq(md) {
+    margin-top: rem(31);
+  }
+}
+
 .contact__button-wrapper {
   text-align: center;
   margin-top: rem(47);
@@ -44,6 +49,7 @@
 }
 
 .contact__button-wrapper.contact__button-wrapper--sub {
+  margin-top: rem(43);
   @include mq(md) {
     margin-top: rem(54);
   }
