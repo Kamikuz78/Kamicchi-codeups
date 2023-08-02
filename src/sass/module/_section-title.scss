@@ -22,6 +22,13 @@
   }
 }
 
+.main-title.main-title--sub {
+  font-size: rem(25);
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
+
 .sub-title {
   font-size: rem(50);
   font-family: $second-font-family;

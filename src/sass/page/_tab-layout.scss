@@ -3,7 +3,6 @@
 .tab-layout {
   margin-top: rem(82);
   @include mq(md) {
-    // margin-top: rem(113);
-    margin-top: 113px;
+    margin-top: rem(113);
   }
 }
