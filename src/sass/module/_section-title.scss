@@ -18,7 +18,7 @@
   font-weight: $regular;
   @include mq(md) {
     font-size: rem(30);
-    letter-spacing: calc(0.5 / 30) * 1em;
+    letter-spacing: rem(2);
   }
 }
 

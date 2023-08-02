@@ -3,7 +3,9 @@
 .footer-layout {
   margin: rem(52) 0 rem(60);
   @include mq(md) {
-    margin: rem(25) 0 rem(29.4);
+    // margin: rem(24) 0 rem(30);
+    margin-top: rem(24);
+    margin-bottom: rem(30);
   }
 }
 

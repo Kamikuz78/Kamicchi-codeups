@@ -2,10 +2,12 @@
 
 .sub-contact {
   background-color: #3d3d3d;
-  padding: rem(70) 0 rem(65);
+  padding: rem(73) 0 rem(64);
   @include mq(md) {
-    padding: rem(154) 0 rem(149);
+    padding-top: rem(150);
+    padding-bottom: rem(150);
   }
+
 }
 
 .sub-contact__header {
@@ -28,7 +30,7 @@
   letter-spacing: calc(2 / 16) * 1em;
   line-height: calc(23.17 / 16);
   @include mq(md) {
-    margin-top: rem(24);
+    margin-top: rem(32);
     text-align: center;
   }
 }

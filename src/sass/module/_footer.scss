@@ -7,15 +7,16 @@
 //   }
 // }
 
-.footer--sub {
-  @include mq(md) {
-    padding: rem(23) 0;
-  }
-}
+// .footer--sub {
+//   @include mq(md) {
+//     padding: rem(23) 0;
+//   }
+// }
 
 .footer__inner {
   @include mq(md) {
-    padding: 0 rem(16) 0 rem(32);
+    padding-right: rem(16);
+    padding-left: rem(32);
   }
 }
 
@@ -92,7 +93,7 @@
   font-weight: $regular;
   letter-spacing: calc(1.2 / 11) * 1em;
   @include mq(md) {
-    margin-top: rem(65);
+    margin-top: rem(68);
     font-size: rem(15);
     line-height: rem(35);
     letter-spacing: rem(1.2);
