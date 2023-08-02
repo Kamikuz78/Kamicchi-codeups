@@ -55,20 +55,16 @@
   overflow: hidden;
   @include mq(md) {
     line-height: 1.5;
-  }
-}
-
-.news {
-  .news-content__link {
-    position: relative;
+    display: inline;
     text-decoration: none;
     background: linear-gradient(90deg, $white, $white);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: left bottom;
     background-size: 0 1px;
-    transition: background 0.3s;
+    transition: background-size 0.3s;
   }
 }
-.news-content__link:hover {
+
+.news-content__text:hover {
   background-size: 100% 1px;
 }

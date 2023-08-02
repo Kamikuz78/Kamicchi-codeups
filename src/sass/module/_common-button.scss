@@ -79,16 +79,3 @@
     margin-top: rem(80);
   }
 }
-
-.blog-detail-article__cards {
-  @include mq(md) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.card__title--article {
-  @include mq(md) {
-    font-size: rem(14);
-    letter-spacing: rem(1);
-  }
-}

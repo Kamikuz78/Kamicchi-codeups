@@ -9,6 +9,9 @@
   font-weight: $regular;
   letter-spacing: rem(1);
 }
+.breadcrumb__body.breadcrumb__body--works {
+  gap: 0 rem(5);
+}
 
 .breadcrumb__body li {
   display: flex;
