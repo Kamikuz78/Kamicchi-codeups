@@ -4,3 +4,5 @@ package-lock.json
 .DS_Store
 .node-versions
 *.css.map
+images
+src/images
