@@ -30,7 +30,7 @@
   letter-spacing: calc(2 / 16) * 1em;
   line-height: calc(23.17 / 16);
   @include mq(md) {
-    margin-top: rem(32);
+    margin-top: rem(35);
     text-align: center;
   }
 }

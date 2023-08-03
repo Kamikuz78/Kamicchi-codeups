@@ -1084,8 +1084,10 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .footer-layout.footer-layout--sub {
-    margin-bottom: 20px;
-    margin-bottom: 1.25rem;
+    margin-top: 26px;
+    margin-top: 1.625rem;
+    margin-bottom: 22px;
+    margin-bottom: 1.375rem;
   }
 }
 
@@ -1198,8 +1200,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .footer__copyright {
-    margin-top: 68px;
-    margin-top: 4.25rem;
+    margin-top: 69px;
+    margin-top: 4.3125rem;
     font-size: 15px;
     font-size: 0.9375rem;
     line-height: 35px;
@@ -2236,8 +2238,8 @@ li:not(:last-child).pc-nav__item a:hover::after {
 }
 @media screen and (min-width: 768px) {
   .sub-contact-layout {
-    margin-top: 150px;
-    margin-top: 9.375rem;
+    margin-top: 149px;
+    margin-top: 9.3125rem;
     margin-bottom: 0px;
     margin-bottom: 0rem;
   }
@@ -2286,8 +2288,8 @@ li:not(:last-child).pc-nav__item a:hover::after {
 }
 @media screen and (min-width: 768px) {
   .sub-contact__text {
-    margin-top: 32px;
-    margin-top: 2rem;
+    margin-top: 35px;
+    margin-top: 2.1875rem;
     text-align: center;
   }
 }
