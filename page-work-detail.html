@@ -103,122 +103,108 @@
 
   <main>
 
-    <!-- mv セクション -->
-    <section class="sub-mv">
-      <div class="sub-mv__inner">
-        <div class="sub-mv__img sub-mv__img--works">
-          <img src="images/common/p-works_mv.jpg" alt="">
-        </div>
-      </div>
-      <div class="sub-mv__title sub-mv__title--works">
-        <h2 class="mv__title-main">制作実績</h2>
-      </div>
-    </section>
 
     <!-- パンくずリスト セクション -->
-    <section class="breadcrumb breadcrumb-layout">
+    <section class="breadcrumb breadcrumb-layout breadcrumb-layout--mvless">
       <div class="breadcrumb__inner inner">
-        <ol class="breadcrumb__body breadcrumb__body--works">
+        <ol class="breadcrumb__body">
           <li><a href="index.html">トップ</a></li>
           <li><span class="breadcrumb__arrow">&gt</span></li>
           <li><a href="page-blog.html">制作実績</a></li>
+          <li><span class="breadcrumb__arrow">&gt</span></li>
+          <li><a href="page-blog-detail.html">制作実績詳細</a></li>
         </ol>
       </div>
     </section>
 
-    <!-- タブ セクション -->
-    <div class="works-tab tab-layout">
-      <div class="inner inner--tab">
-        <div class="works-tab__wrap">
-          <ul class="blog__tabs tab">
-            <li class="tab__label active"><a href="page-works.html">ALL</a></li>
-            <li class="tab__label"><a href="page-works.html">カテゴリ１</a></li>
-            <li class="tab__label"><a href="page-works.html">カテゴリカテゴリ</a></li>
-            <li class="tab__label"><a href="page-works.html">カテ</a></li>
-          </ul>
-        </div>
-      </div>
+
+
+    <!-- ページナビゲーション -->
+    <div class="blog-detail__pagination pagination">
+      <ul class="pagination__list pagination__list--trio">
+        <li class="pagination__item "><a href="#">PREV</a></li>
+        <li class="pagination__item pagination__item--center"><a href="#">一覧</a></li>
+        <li class="pagination__item "><a href="#">NEXT</a></li>
+      </ul>
     </div>
 
-    <!-- works-content -->
-    <section class="works-content">
+    <!-- 関連記事ボタン -->
+    <div class="blog-detail__button-wrapper inner">
+      <a href="#" class="common-button common-button--article">関連記事</a>
+    </div>
+
+    <!-- 関連記事カード -->
+    <section class="related-article related-article-layout">
       <div class="inner">
-        <div class="works-content__items works-cards">
-          <!-- works-card -->
-          <a href="page-work-detail.html" class="works-cards__item works-card">
-            <div class="works-card__image">
-              <div class="works-card__category">カテゴリ１</div>
-              <img src="images/common/p-works_01.jpg" alt="会議室での発表の写真">
+        <div class="related-article__cards related-cards">
+          <!--related-card -->
+          <a href="page-blog-detail.html" class="related-cards__item related-card">
+            <div class="related-card__img">
+              <img src="images/common/blog-card_06.jpg" alt="タイピングしている手元の写真">
             </div>
-            <div class="works-card__title">
-              <p>CodeUps株式会社</p>
+            <div class="related-card__body">
+              <h3 class="related-card__title">タイトルが入ります。タイトルが入ります。</h3>
+              <p class="related-card__text">
+                説明文が入ります。説明文が入ります。説明文が入ります。
+              </p>
             </div>
-          </a>
-          <!-- works-card -->
-          <a href="page-work-detail.html" class="works-cards__item works-card">
-            <div class="works-card__image">
-              <div class="works-card__category">カテゴリ１</div>
-              <img src="images/common/p-works_02.jpg" alt="会議室での発表の写真">
-            </div>
-            <div class="works-card__title">
-              <p>CodeUps株式会社</p>
+            <div class="related-card__info info">
+              <div class="info__category">カテゴリ</div>
+              <time datetime="2023-04-19" class="info__date">2023.04.19</time>
             </div>
           </a>
-          <!-- works-card -->
-          <a href="page-work-detail.html" class="works-cards__item works-card">
-            <div class="works-card__image">
-              <div class="works-card__category">カテゴリ１</div>
-              <img src="images/common/p-works_03.jpg" alt="会議室での発表の写真">
+          <!--related-card -->
+          <a href="page-blog-detail.html" class="related-cards__item related-card">
+            <div class="related-card__img">
+              <img src="images/common/blog-card_07.jpg" alt="デスクの上のノートパソコンの写真">
             </div>
-            <div class="works-card__title">
-              <p>CodeUps株式会社</p>
+            <div class="related-card__body">
+              <h3 class="related-card__title">タイトルが入ります。タイトルが入ります。</h3>
+              <p class="related-card__text">
+                説明文が入ります。説明文が入ります。説明文が入ります。
+              </p>
             </div>
-          </a>
-          <!-- works-card -->
-          <a href="page-work-detail.html" class="works-cards__item works-card">
-            <div class="works-card__image">
-              <div class="works-card__category">カテゴリ１</div>
-              <img src="images/common/p-works_04.jpg" alt="会議室での発表の写真">
-            </div>
-            <div class="works-card__title">
-              <p>CodeUps株式会社</p>
+            <div class="related-card__info info">
+              <div class="info__category">カテゴリ</div>
+              <time datetime="2023-04-19" class="info__date">2023.04.19</time>
             </div>
           </a>
-          <!-- works-card -->
-          <a href="page-work-detail.html" class="works-cards__item works-card">
-            <div class="works-card__image">
-              <div class="works-card__category">カテゴリ１</div>
-              <img src="images/common/p-works_05.jpg" alt="会議室での発表の写真">
+          <!--related-card -->
+          <a href="page-blog-detail.html" class="related-cards__item related-card">
+            <div class="related-card__img">
+              <img src="images/common/blog-card_08.jpg" alt="開発ルームでパソコンに向かう女性の写真">
             </div>
-            <div class="works-card__title">
-              <p>CodeUps株式会社</p>
+            <div class="related-card__body">
+              <h3 class="related-card__title">タイトルが入ります。タイトルが入ります。</h3>
+              <p class="related-card__text">
+                説明文が入ります。説明文が入ります。説明文が入ります。
+              </p>
             </div>
-          </a>
-          <!-- works-card -->
-          <a href="page-work-detail.html" class="works-cards__item works-card">
-            <div class="works-card__image">
-              <div class="works-card__category">カテゴリ１</div>
-              <img src="images/common/p-works_06.jpg" alt="会議室での発表の写真">
-            </div>
-            <div class="works-card__title">
-              <p>CodeUps株式会社</p>
+            <div class="related-card__info info">
+              <div class="info__category">カテゴリ</div>
+              <time datetime="2023-04-19" class="info__date">2023.04.19</time>
             </div>
           </a>
+          <!--related-card -->
+          <a href="page-blog-detail.html" class="related-cards__item related-card">
+            <div class="related-card__img">
+              <img src="images/common/blog-card_09.jpg" alt="暗めの室内でバックライトでてらされたモニターの写真">
+            </div>
+            <div class="related-card__body">
+              <h3 class="related-card__title">タイトルが入ります。タイトルが入ります。</h3>
+              <p class="related-card__text">
+                説明文が入ります。説明文が入ります。説明文が入ります。
+              </p>
+            </div>
+            <div class="related-card__info info">
+              <div class="info__category">カテゴリ</div>
+              <time datetime="2023-04-19" class="info__date">2023.04.19</time>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
-
-    <!-- ページナビゲーション -->
-    <div class="archive-home-pagination pagination pagination-layout">
-      <ul class="pagination__list blog-pagination__content">
-        <li class="pagination__item pagination__item--prev"><a href="#">PREV</a></li>
-        <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
-        <li class="pagination__item"><a href="#">2</a></li>
-        <li class="pagination__item"><a href="#">3</a></li>
-        <li class="pagination__item"><a href="#">4</a></li>
-        <li class="pagination__item pagination__item--next"><a href="#">NEXT</a></li>
-      </ul>
-    </div>
 
     <!-- contact -->
     <section class="sub-contact sub-contact-layout">
@@ -239,7 +225,7 @@
   </main>
 
   <!-- footer -->
-  <footer class="footer footer-layout footer-layout--sub">
+  <footer class="footer footer-layout">
     <div class="footer__inner">
       <div class="footer__content">
         <div class="footer__logo">
@@ -253,26 +239,26 @@
             <a href="home.html">お知らせ</a>
           </li>
           <li class="footer__item">
-            <a href="page-content.html">事業内容</a>
+            <a href="content.html">事業内容</a>
           </li>
           <li class="footer__item">
-            <a href="page-works.html">制作実績</a>
+            <a href="works.html">制作実績</a>
           </li>
           <li class="footer__item">
-            <a href="page-overview.html">企業概要</a>
+            <a href="overview.html">企業概要</a>
           </li>
           <li class="footer__item">
             <a href="page-blog.html">ブログ</a>
           </li>
           <li class="footer__item">
-            <a href="page-contact.html">お問い合わせ</a>
+            <a href="contact.html">お問い合わせ</a>
           </li>
         </ul>
       </div>
       <div class="footer__copyright">&copy; 2023 CodeUps Inc.</div>
     </div>
   </footer><!-- /footer -->
-  <a href="#body" class="top-button top-button-layout top-button-layout--sub js-top-button">サイトのトップに戻る</a>
+  <a href="#body" class="top-button top-button-layout js-top-button">サイトのトップに戻る</a>
 
 </body>
 
