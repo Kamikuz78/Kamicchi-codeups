@@ -39,21 +39,25 @@
   }
 }
 
-.single-body__image {
+.single-body__img {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
-  aspect-ratio: 375 / 251;
   object-fit: cover;
   @include mq(md) {
+    width: 100%;
+    max-width: rem(799);
     margin-right: 0;
     margin-left: 0;
-    aspect-ratio: 799 / 427;
   }
 }
 
-.single-body__image img {
+.single-body__img img {
+  aspect-ratio: 375 / 251;
   width: 100%;
-  height: 100%;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 799 / 427;
+  }
 }
 
 .single-body__content {

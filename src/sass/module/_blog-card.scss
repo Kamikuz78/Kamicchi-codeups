@@ -21,14 +21,17 @@
 }
 
 .blog-card__img {
-  aspect-ratio: 350 / 233;
-  overflow: hidden;
+  width: 100%;
+  max-width: rem(350);
 }
 
 .blog-card__img img {
-  object-fit: cover;
+  aspect-ratio: 335 / 223;
   width: 100%;
-  height: 100%;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 350 / 233;
+  }
 }
 
 .blog-card__title {

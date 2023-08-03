@@ -7,9 +7,24 @@
   }
 }
 
-.blog-detail__button-wrapper {
+.blog-detail__headline-wrapper {
   margin-top: rem(120);
   @include mq(md) {
     margin-top: rem(104);
+  }
+}
+.blog-detail__headline {
+  text-align: center;
+  display: inline-block;
+  font-size: rem(16);
+  color: $white;
+  width: 100%;
+  background-color: $gray;
+  letter-spacing: rem(2);
+  line-height: 1;
+  border: 1px solid $white;
+  padding: rem(12) rem(9);
+  @include mq(md) {
+    padding: rem(11) rem(9);
   }
 }
