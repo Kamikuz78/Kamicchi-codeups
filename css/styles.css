@@ -1850,7 +1850,8 @@ select::-ms-expand {
   line-height: 1;
   padding: 3px 6.5px;
   padding: 0.1875rem 0.40625rem;
-  letter-spacing: 1;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   border: 1px solid #fff;
   color: #fff;
 }
@@ -2072,7 +2073,8 @@ li:not(:last-child).pc-nav__item a:hover::after {
   text-align: left;
   width: 100%;
   line-height: 2;
-  letter-spacing: 1;
+  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 @media screen and (min-width: 768px) {
   .related-card__title {

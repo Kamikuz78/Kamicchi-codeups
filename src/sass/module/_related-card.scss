@@ -42,7 +42,7 @@
   text-align: left;
   width: 100%;
   line-height: 2;
-  letter-spacing: 1;
+  letter-spacing: rem(1);
   @include mq(md) {
     font-size: rem(14);
     line-height: 2;

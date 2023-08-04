@@ -16,7 +16,7 @@
   max-height: rem(24);
   line-height: 1;
   padding: rem(3) rem(6.5);
-  letter-spacing: 1;
+  letter-spacing: rem(2);
   border: 1px solid $white;
   color: $white;
   @include mq(md) {
@@ -60,5 +60,3 @@
 .pagination__item--next {
   margin-left: rem(8);
 }
-
-
