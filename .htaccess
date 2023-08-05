@@ -1,1 +1,8 @@
 ErrorDocument 404 /404.html
+
+#####basicauth#####
+AuthUserFile "/home/kamikuz0410/kamikuz0410.html.xdomain.jp/htpasswd/kamicchi_codeups/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user
+#####end:basicauth#####
