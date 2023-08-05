@@ -104,7 +104,6 @@
     font-size: rem(18);
     font-weight: $regular;
     letter-spacing: rem(2);
-    padding-left: rem(9);
     display: block;
     line-height: 1.4;
     @include mq(md) {
@@ -119,4 +118,8 @@
   background-size: 100% 3px;
   background-position: bottom;
   padding-bottom: rem(2);
+}
+
+.blog-detail-items h3 {
+  padding-left: rem(9);
 }

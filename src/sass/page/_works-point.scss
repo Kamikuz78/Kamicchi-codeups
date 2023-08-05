@@ -1,2 +1,20 @@
 @use "global" as *;
 
+.works-point__title {
+  display: inline-block;
+  border-radius: 32px;
+  border: 1px solid #fff;
+  background: #111;
+  padding: rem(8) rem(24);
+  margin-left: rem(24);
+}
+
+.works-point__title h3 {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+}
+
+.works-point__text {
+  margin-top: rem(56);
+  border: 1px solid #fff;
+}
