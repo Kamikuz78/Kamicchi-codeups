@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.company-info__item {
+  padding: rem(16) 0;
+  border-bottom: 1px solid $white;
+  display: flex;
+  font-size: rem(13);
+  line-height: rem(24);
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(16);
+    padding: rem(30) 0 rem(40);
+  }
+}
+
+.company-info__item dt {
+  margin-left: rem(5);
+  width: rem(110);
+  @include mq(md) {
+    margin-left: 0;
+    width: rem(152);
+  }
+}
+
+.company-info__item dd {
+  width: calc(100% - rem(110));
+  @include mq(md) {
+    width: calc(100% - rem(152));
+  }
+}
+
+.company-info__map {
+  aspect-ratio: 375 / 300;
+  margin-top: rem(120);
+  width: 100%;
+  @include mq(md) {
+    aspect-ratio: 1100 / 500;
+  }
+}
