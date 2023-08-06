@@ -5,10 +5,10 @@
   row-gap: rem(30);
 }
 
-.philosophy-list__item {
+.philosophy-list .common__item {
   @include mq(md) {
     display: flex;
-    align-items: flex-end;
+    // justify-content: space-between;
   }
 }
 

@@ -667,15 +667,6 @@ select::-ms-expand {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .common.overview__content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-}
-
 .common__item-img {
   aspect-ratio: 375/261;
   -o-object-fit: cover;
@@ -3089,13 +3080,10 @@ letter-spacing: 2px; */
 }
 
 @media screen and (min-width: 768px) {
-  .philosophy-list__item {
+  .philosophy-list .common__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
 }
 

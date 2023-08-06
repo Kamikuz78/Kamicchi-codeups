@@ -13,11 +13,11 @@
   }
 }
 
-.common.overview__content {
-  @include mq(md) {
-    flex-direction: row-reverse;
-  }
-}
+// .common.overview__content {
+//   @include mq(md) {
+//     flex-direction: row-reverse;
+//   }
+// }
 
 
 .common__item-img {
