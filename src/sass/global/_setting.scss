@@ -107,3 +107,8 @@ $mediaquerys: (
   /* Chrome, Safari 対応 */
   display: none;
 }
+*,
+*::before,
+*::after {
+  outline: 1px solid red;
+}

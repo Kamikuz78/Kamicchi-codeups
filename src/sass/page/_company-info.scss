@@ -30,10 +30,15 @@
 }
 
 .company-info__map {
-  aspect-ratio: 375 / 300;
   margin-top: rem(120);
-  width: 100%;
+  aspect-ratio: 375 / 300;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  object-fit: cover;
   @include mq(md) {
-    aspect-ratio: 1100 / 500;
+    aspect-ratio: 1100 / 367;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

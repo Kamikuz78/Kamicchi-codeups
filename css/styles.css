@@ -36,6 +36,12 @@ body {
   display: none;
 }
 
+*,
+*::before,
+*::after {
+  outline: 1px solid red;
+}
+
 /* リキッドレイアウト対応 */
 html {
   font-size: 16px;
@@ -2744,8 +2750,8 @@ li:not(:last-child).pc-nav__item a:hover::after {
 }
 
 .company-info-layout {
-  margin-top: 101px;
-  margin-top: 6.3125rem;
+  margin-top: 86px;
+  margin-top: 5.375rem;
 }
 @media screen and (min-width: 768px) {
   .company-info-layout {
@@ -2800,14 +2806,20 @@ li:not(:last-child).pc-nav__item a:hover::after {
 }
 
 .company-info__map {
-  aspect-ratio: 375/300;
   margin-top: 120px;
   margin-top: 7.5rem;
-  width: 100%;
+  aspect-ratio: 375/300;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .company-info__map {
-    aspect-ratio: 1100/500;
+    aspect-ratio: 1100/367;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
