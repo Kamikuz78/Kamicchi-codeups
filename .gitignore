@@ -5,4 +5,4 @@ package-lock.json
 .node-versions
 *.css.map
 images
-src/images
+.src/images
