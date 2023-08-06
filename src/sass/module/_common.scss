@@ -1,20 +1,6 @@
 @use "global" as *;
 
-.common {
-  width: 100%;
-  @include mq(md) {
-    padding: rem(80) 0;
-    background: linear-gradient(90deg, transparent 0% calc(50% - rem(256)), #333 calc(50% - rem(256)) 100vw);
-  }
-}
-
-.common--reverse {
-  @include mq(md) {
-    background: linear-gradient(270deg, transparent 0% calc(50% - rem(256)), #333 calc(50% - rem(256)) 100vw);
-  }
-}
-
-.common__items {
+.common__item {
   width: 100%;
   max-width: rem(600);
   margin-right: auto;
@@ -27,16 +13,12 @@
   }
 }
 
-.common--reverse .common__items {
+.common.overview__content {
   @include mq(md) {
     flex-direction: row-reverse;
   }
 }
-.common--reverse .common__item-img {
-  @include mq(md) {
-    margin: 0 0 0 rem(31);
-  }
-}
+
 
 .common__item-img {
   aspect-ratio: 375/261;

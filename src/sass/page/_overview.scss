@@ -43,3 +43,12 @@
     transform: rotate(45deg);
   }
 }
+
+.overview__content {
+  width: 100%;
+  @include mq(md) {
+    padding: rem(80) 0;
+    background: linear-gradient(270deg, transparent 0% calc(50% - rem(256)), #333 calc(50% - rem(256)) 100vw);
+  }
+}
+

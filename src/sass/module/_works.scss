@@ -18,3 +18,18 @@
     margin-top: rem(39);
   }
 }
+
+.works__content {
+  width: 100%;
+  @include mq(md) {
+    padding: rem(80) 0;
+    background: linear-gradient(90deg, transparent 0% calc(50% - rem(256)), #333 calc(50% - rem(256)) 100vw);
+  }
+}
+
+
+// .works__content .common__item-img {
+//   @include mq(md) {
+//     margin: 0 0 0 rem(31);
+//   }
+// }

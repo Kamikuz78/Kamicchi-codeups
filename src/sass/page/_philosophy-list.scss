@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.philosophy-list {
+  display: grid;
+  row-gap: rem(30);
+}
+
+.philosophy-list__item {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.common__item:nth-of-type(even) {
+  @include mq(md) {
+  }flex-direction: row-reverse;
+}

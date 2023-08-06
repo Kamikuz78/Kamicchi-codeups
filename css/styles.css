@@ -647,26 +647,7 @@ select::-ms-expand {
   }
 }
 
-.common {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .common {
-    padding: 80px 0;
-    padding: 5rem 0;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#333));
-    background: linear-gradient(90deg, transparent 0% calc(50% - 16rem), #333 calc(50% - 16rem) 100vw);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .common--reverse {
-    background: -webkit-gradient(linear, right top, left top, from(transparent), to(#333));
-    background: linear-gradient(270deg, transparent 0% calc(50% - 16rem), #333 calc(50% - 16rem) 100vw);
-  }
-}
-
-.common__items {
+.common__item {
   width: 100%;
   max-width: 600px;
   max-width: 37.5rem;
@@ -674,7 +655,7 @@ select::-ms-expand {
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .common__items {
+  .common__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -687,18 +668,11 @@ select::-ms-expand {
 }
 
 @media screen and (min-width: 768px) {
-  .common--reverse .common__items {
+  .common.overview__content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .common--reverse .common__item-img {
-    margin: 0 0 0 31px;
-    margin: 0 0 0 1.9375rem;
   }
 }
 
@@ -2633,6 +2607,18 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
+.works__content {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .works__content {
+    padding: 80px 0;
+    padding: 5rem 0;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#333));
+    background: linear-gradient(90deg, transparent 0% calc(50% - 16rem), #333 calc(50% - 16rem) 100vw);
+  }
+}
+
 .archive-home-layout {
   margin-top: 85px;
   margin-top: 5.3125rem;
@@ -2989,6 +2975,18 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
+.overview__content {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .overview__content {
+    padding: 80px 0;
+    padding: 5rem 0;
+    background: -webkit-gradient(linear, right top, left top, from(transparent), to(#333));
+    background: linear-gradient(270deg, transparent 0% calc(50% - 16rem), #333 calc(50% - 16rem) 100vw);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .sub-blog__items {
     -webkit-box-orient: horizontal;
@@ -3012,6 +3010,67 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
+.philosophy-header-layout {
+  margin-top: 84px;
+  margin-top: 5.25rem;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-header-layout {
+    margin-top: 69px;
+    margin-top: 4.3125rem;
+  }
+}
+
+.philosophy-header__inner {
+  text-align: center;
+}
+
+.philosophy-header__title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  width: 100%;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-header__title {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
+
+.philosophy-header__text p {
+  display: inline-block;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  text-align: start;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-header__text p {
+    width: 100%;
+    max-width: 570px;
+    max-width: 35.625rem;
+    line-height: 2;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*  説明が入ります。。
+color: #FFF;
+font-family: Noto Sans JP;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 35px; 
+letter-spacing: 2px; */
 .philosophy-layout {
   margin-top: 80px;
   margin-top: 5rem;
@@ -3023,12 +3082,29 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
-.philosophy__list {
+.philosophy-list {
   display: grid;
   row-gap: 30px;
   row-gap: 1.875rem;
 }
 
+@media screen and (min-width: 768px) {
+  .philosophy-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.common__item:nth-of-type(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
 .related-article-layout {
   margin-top: 36px;
   margin-top: 2.25rem;
