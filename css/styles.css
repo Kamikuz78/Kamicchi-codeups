@@ -2222,6 +2222,11 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
+.sub-contact-layout--p-contact {
+  margin-top: 98px;
+  margin-top: 6.125rem;
+}
+
 .sub-contact {
   background-color: #3d3d3d;
   padding: 73px 0 64px;
@@ -3063,8 +3068,8 @@ font-weight: 400;
 line-height: 35px; 
 letter-spacing: 2px; */
 .philosophy-layout {
-  margin-top: 80px;
-  margin-top: 5rem;
+  margin-top: 59px;
+  margin-top: 3.6875rem;
 }
 @media screen and (min-width: 768px) {
   .philosophy-layout {
@@ -3087,12 +3092,19 @@ letter-spacing: 2px; */
   }
 }
 
-.common__item:nth-of-type(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+@media screen and (min-width: 768px) {
+  .common__item:nth-of-type(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .common__item:nth-of-type(even) .common__item-img {
+    margin: 0 0 0 31px;
+    margin: 0 0 0 1.9375rem;
+  }
 }
+
 .related-article-layout {
   margin-top: 36px;
   margin-top: 2.25rem;

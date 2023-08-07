@@ -14,5 +14,9 @@
 
 .common__item:nth-of-type(even) {
   @include mq(md) {
-  }flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    .common__item-img{
+      margin: 0 0 0 rem(31);
+    }
+  }
 }

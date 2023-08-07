@@ -2,11 +2,12 @@
 
 .sub-contact-layout {
   margin-top: rem(120);
-  // margin-top: rem(70);
-  // margin-bottom: rem(65);
   @include mq(md) {
     margin-top: rem(149);
-    // margin-top: rem(103);
     margin-bottom: rem(0);
   }
+}
+
+.sub-contact-layout--p-contact {
+  margin-top: rem(98);
 }
