@@ -6,7 +6,7 @@ const rename = require('gulp-rename');
 // 読み込み先（階層が間違えていると動かないので注意）
 const srcPath = {
   css: 'src/sass/**/*.scss',
-  img: '/images/**/*',
+  img: 'src/images/**/*',
   html: './**/*.html',
 };
 
