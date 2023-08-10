@@ -6,3 +6,11 @@
     margin-top: rem(150);
   }
 }
+
+.contact-layout--sub {
+  margin-top: rem(120);
+  @include mq(md) {
+    margin-top: rem(149);
+    margin-bottom: rem(0);
+  }
+}
