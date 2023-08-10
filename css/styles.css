@@ -242,8 +242,6 @@ select::-ms-expand {
 
 .blog-card__img {
   width: 100%;
-  max-width: 350px;
-  max-width: 21.875rem;
 }
 
 .blog-card__img img {
