@@ -76,7 +76,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //backgroundまたはページ内リンクをクリックで閉じる
-  $(".drawer__item a[href]").on("click", function (event) {
+  $(".js-drawer__items a[href]").on("click", function (event) {
     closeDrawer();
   });
 
