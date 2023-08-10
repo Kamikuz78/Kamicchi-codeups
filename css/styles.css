@@ -1842,13 +1842,13 @@ select::-ms-expand {
 }
 
 .pagination-layout {
-  margin-top: 79px;
-  margin-top: 4.9375rem;
+  margin-top: 80px;
+  margin-top: 5rem;
 }
 @media screen and (min-width: 768px) {
   .pagination-layout {
-    margin-top: 101px;
-    margin-top: 6.3125rem;
+    margin-top: 104px;
+    margin-top: 6.5rem;
   }
 }
 
@@ -2996,17 +2996,6 @@ li:not(:last-child).pc-nav__item a:hover::after {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: center;
-  }
-}
-
-.page-blog-pagination {
-  margin-top: 80px;
-  margin-top: 5rem;
-}
-@media screen and (min-width: 768px) {
-  .page-blog-pagination {
-    margin-top: 104px;
-    margin-top: 6.5rem;
   }
 }
 
