@@ -38,6 +38,10 @@
   }
 }
 
+.pc-nav__item--white:hover {
+  color: $white;
+}
+
 .pc-nav__item--white::before {
   content: "";
   width: 100%;

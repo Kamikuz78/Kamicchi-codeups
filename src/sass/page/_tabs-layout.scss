@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.tab-layout {
+.tabs-layout {
   margin-top: rem(82);
   @include mq(md) {
     margin-top: rem(113);

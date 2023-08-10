@@ -1,22 +1,22 @@
 @use "global" as *;
 
-.breadcrumb__body {
-  display: flex;
-  gap: 0 rem(5);
-  list-style: none;
-  padding: 0;
-  font-size: rem(16);
-  font-weight: $regular;
-  letter-spacing: rem(1);
-}
-.breadcrumb__body.breadcrumb__body--works {
-  gap: 0 rem(5);
-}
+// .breadcrumb__body {
+//   // display: flex;
+//   // gap: 0 rem(5);
+//   list-style: none;
+//   padding: 0;
+//   font-size: rem(16);
+//   font-weight: $regular;
+//   letter-spacing: rem(1);
+// }
+// .breadcrumb__body.breadcrumb__body--works {
+//   gap: 0 rem(5);
+// }
 
-.breadcrumb__body li {
-  display: flex;
-  align-items: center;
-}
+// .breadcrumb__body li {
+//   // display: flex;
+//   align-items: center;
+// }
 
 .breadcrumb__body a {
   color: $white;

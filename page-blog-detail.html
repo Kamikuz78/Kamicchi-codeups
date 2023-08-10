@@ -105,17 +105,15 @@
 
 
     <!-- パンくずリスト ナビ -->
-    <nav class="breadcrumb breadcrumb-layout breadcrumb-layout--mvless">
+    <div class="breadcrumb breadcrumb-layout breadcrumb-layout--mvless">
       <div class="breadcrumb__inner inner">
-        <ol class="breadcrumb__body">
-          <li><a href="./" class="header__link">トップ</a></li>
-          <li><span class="breadcrumb__arrow">&gt;</span></li>
-          <li><a href="page-blog.html">ブログ記事一覧</a></li>
-          <li><span class="breadcrumb__arrow">&gt;</span></li>
-          <li>ブログ記事詳細</li>
-        </ol>
+        <span><a href="./">トップ</a></span>
+        &gt;
+        <span><a href="page-blog.html">ブログ記事一覧</a></span>
+        &gt;
+        <span>ブログ記事詳細</span>
       </div>
-    </nav>
+    </div>
 
     <!-- ブログ記事 セクション -->
     <section class="single-body single-body-layout">
@@ -164,9 +162,9 @@
     <!-- ページナビゲーション -->
     <div class="blog-detail__pagination pagination">
       <ul class="pagination__list pagination__list--trio">
-        <li class="pagination__item "><a href="page-blog.html">PREV</a></li>
-        <li class="pagination__item pagination__item--center"><a href="page-blog.html">一覧</a></li>
-        <li class="pagination__item "><a href="page-blog.html">NEXT</a></li>
+        <li class="pagination__item pagination__item--text"><a href="page-blog.html">PREV</a></li>
+        <li class="pagination__item pagination__item--text"><a href="page-blog.html">一覧</a></li>
+        <li class="pagination__item pagination__item--text"><a href="page-blog.html">NEXT</a></li>
       </ul>
     </div>
 

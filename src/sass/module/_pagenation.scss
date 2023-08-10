@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .pagination__list {
+  display: flex;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -9,23 +10,29 @@
 }
 
 .pagination__item {
-  display: inline-block;
+  // display: inline-block;
   grid-row: 1;
   justify-content: center;
   text-align: center;
   max-height: rem(24);
   line-height: 1;
-  padding: rem(3) rem(6.5);
   letter-spacing: rem(2);
   border: 1px solid $white;
   color: $white;
+  font-weight: $regular;
+
   @include mq(md) {
     transition: 0.3s;
   }
 }
 
+.pagination__item:not(:last-child):not(:first-child) a {
+  padding: rem(3) rem(6.5);
+  display: block;
+}
+
 .pagination__list--trio {
-  grid-template-columns: rem(71) rem(71) rem(71);
+  // grid-template-columns: rem(71) rem(71) rem(71);
   gap: 0 rem(48);
 }
 
@@ -44,19 +51,21 @@
   pointer-events: none;
 }
 
-.pagination__item--prev,
-.pagination__item--next {
-  display: inline-block;
-  justify-content: center;
-  line-height: 1;
-  letter-spacing: rem(2);
-  font-weight: $regular;
-  padding: rem(3) rem(10);
+// .pagination__item--prev,
+// .pagination__item--next {
+// display: inline-block;
+// }
+
+.pagination__item--text a {
+  min-width: rem(71);
+  padding: rem(4) rem(11);
+  display: block;
 }
-.pagination__item--prev {
+
+.pagination__list ul li:first-child {
   margin-right: rem(8);
 }
 
-.pagination__item--next {
-  margin-left: rem(8);
-}
+// .pagination__item: (: last-child) {
+//   margin-left: rem(8);
+// }

@@ -2,6 +2,9 @@
 
 .drawer.is-active {
   display: block;
+  @include mq(md) {
+    display: none;
+  }
 }
 
 .drawer__items {
@@ -22,4 +25,5 @@
   font-weight: $regular;
   letter-spacing: calc(2 / 16) * 1em;
   line-height: calc(23 / 16);
+  
 }

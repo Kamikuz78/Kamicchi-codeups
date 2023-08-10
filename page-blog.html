@@ -110,25 +110,21 @@
   <!-- パンくずリスト ナビ -->
   <nav class="breadcrumb breadcrumb-layout">
     <div class="breadcrumb__inner inner">
-      <ul class="breadcrumb__body">
-        <li><a href="./" class="header__link">トップ</a></li>
-        <li><span class="breadcrumb__arrow">&gt;</span></li>
-        <li>ブログ記事一覧</li>
-      </ul>
+      <span><a href="./">トップ</a></span>
+      &gt;
+      <span>ブログ記事一覧</span>
     </div>
   </nav>
 
   <!-- タブ セクション -->
-  <div class="blog-tab tab-layout">
-    <div class="inner inner--tab">
-      <div class="blog-tab__wrap">
-        <ul class="blog__tabs tab">
+  <div class="tabs tabs-layout">
+    <div class="inner">
+        <ul class="tabs__items tab">
           <li class="tab__label active"><a href="page-blog.html">ALL</a></li>
           <li class="tab__label"><a href="page-blog.html">カテゴリ１</a></li>
           <li class="tab__label"><a href="page-blog.html">カテゴリカテゴリ</a></li>
           <li class="tab__label"><a href="page-blog.html">カテ</a></li>
         </ul>
-      </div>
     </div>
   </div>
 
@@ -279,12 +275,12 @@
   <!-- ページナビゲーション -->
   <div class="page-blog-pagination pagination">
     <ul class="pagination__list blog-pagination__content">
-      <li class="pagination__item pagination__item--prev"><a href="#">PREV</a></li>
+      <li class="pagination__item pagination__item--text"><a href="#">PREV</a></li>
       <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
       <li class="pagination__item"><a href="#">2</a></li>
       <li class="pagination__item"><a href="#">3</a></li>
       <li class="pagination__item"><a href="#">4</a></li>
-      <li class="pagination__item pagination__item--next"><a href="#">NEXT</a></li>
+      <li class="pagination__item pagination__item--text"><a href="#">NEXT</a></li>
     </ul>
   </div>
 

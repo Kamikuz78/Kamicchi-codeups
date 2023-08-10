@@ -66,6 +66,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".js-hamburger").removeClass("is-open");
       $(".js-drawer-bg").removeClass("is-open");
   }
+  //
+  $(window).resize(function() {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      $(".js-drawer").fadeOut();
+      $(".js-hamburger").removeClass("is-open");
+      $(".js-drawer-bg").removeClass("is-open");
+    };
+  });
 
   //backgroundまたはページ内リンクをクリックで閉じる
   $(".drawer__item a[href]").on("click", function (event) {
