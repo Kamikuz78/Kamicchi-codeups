@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.related-article__headline {
+  text-align: center;
+  display: inline-block;
+  font-size: rem(16);
+  color: $white;
+  width: 100%;
+  background-color: $gray;
+  letter-spacing: rem(2);
+  line-height: 1;
+  border: 1px solid $white;
+  padding: rem(12) rem(9);
+  @include mq(md) {
+    padding: rem(11) rem(9);
+  }
+}
+
+.related-article__cards {
+  margin-top: rem(36);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}

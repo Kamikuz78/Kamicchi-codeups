@@ -1,9 +1,8 @@
 @use "global" as *;
 
-.blog-detail__pagination {
-  margin-top: rem(80);
+.related-article-layout {
+  margin-top: rem(120);
   @include mq(md) {
     margin-top: rem(104);
   }
 }
-

@@ -2657,12 +2657,12 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
-.blog-detail__headline-wrapper {
+.related-article-layout {
   margin-top: 120px;
   margin-top: 7.5rem;
 }
 @media screen and (min-width: 768px) {
-  .blog-detail__headline-wrapper {
+  .related-article-layout {
     margin-top: 104px;
     margin-top: 6.5rem;
   }
