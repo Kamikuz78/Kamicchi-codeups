@@ -1,19 +1,26 @@
 @use "global" as *;
 
-.gallery {
+.works-gallery__body {
   width: 100%;
-  max-width: 800px;
   margin: 40px auto;
+  aspect-ratio: 375/250;
+  @include mq(md) {
+    max-width: 800px;
+  }
 }
 //メインスライド
-.gallery__slider {
-  width: rem(800);
+.works-gallery__slider {
   height: auto;
   margin: 0 0 10px 0;
+  @include mq(md) {
+    width: rem(800);
+  }
 
   .swiper-slide {
     width: 100%;
-    height: rem(427);
+    @include mq(md) {
+      height: rem(427);
+    }
 
     img {
       display: block;
@@ -30,7 +37,7 @@
   transition-timing-function: linear;
 }
 //サムネイルスライド
-.gallery-thumbs {
+.works-gallery-thumbs {
   width: 100%;
   padding: 0;
   overflow: hidden;
