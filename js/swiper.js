@@ -34,12 +34,17 @@ var swiper = new Swiper(".js-works-swiper", {
     slidesPerView: 3,
     // slidesPerView: 'auto',
     breakpoints: {
-      // 768px以上の場合
       768: {
         slidesPerView: 8,
       }
     },
-    spaceBetween: 8,
+    spaceBetween: 24,
+    breakpoints: {
+      // 768px以上の場合
+      768: {
+        spaceBetween: 8,
+      }
+    },
     centeredSlides: true,
     loop: true,
     // loopAdditionalSlides: 8,

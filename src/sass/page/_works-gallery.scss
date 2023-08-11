@@ -2,8 +2,9 @@
 
 .works-gallery__body {
   width: 100%;
-  margin: 40px auto;
-  aspect-ratio: 375/250;
+  margin-left: auto;
+  margin-right: auto;
+  // aspect-ratio: 375/250;
   @include mq(md) {
     max-width: 800px;
   }
@@ -11,7 +12,7 @@
 //メインスライド
 .works-gallery__slider {
   height: auto;
-  margin: 0 0 10px 0;
+  // margin: 0 0 10px 0;
   @include mq(md) {
     width: rem(800);
   }
@@ -40,14 +41,23 @@
 .works-gallery-thumbs {
   width: 100%;
   padding: 0;
+  margin-top: rem(32);
   overflow: hidden;
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 
   .swiper-slide {
-    width: rem(93);
-    height: rem(93);
+    width: rem(163);
+    height: rem(163);
+    flex-shrink: 0;
     text-align: center;
     overflow: hidden;
     opacity: 0.5;
+    @include mq(md) {
+      width: rem(93);
+      height: rem(93);
+    }
   }
 
   .swiper-slide-active {
@@ -56,7 +66,11 @@
 
   .swiper-slide img {
     width: auto;
-    height: 100%;
+    aspect-ratio: 163/163;
+    // height: 100%;
+    @include mq(md) {
+      aspect-ratio: 93/93;
+    }
   }
 }
 
