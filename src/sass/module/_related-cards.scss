@@ -11,18 +11,3 @@
     text-align: center;
   }
 }
-
-.related-cards__item {
-  display: flex;
-  flex-direction: column;
-  background-color: $white;
-  color: $black;
-  transition: 0.5s;
-  justify-content: space-between;
-  @include mq(md) {
-    &:hover {
-      color: $white;
-      background-color: $gray;
-    }
-  }
-}

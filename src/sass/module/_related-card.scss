@@ -1,8 +1,19 @@
 @use "global" as *;
 
 .related-card {
+  display: flex;
+  flex-direction: column;
   height: inherit;
   background-color: $white;
+  color: $black;
+  justify-content: space-between;
+  @include mq(md) {
+  transition: 0.5s;
+    &:hover {
+      color: $white;
+      background-color: $gray;
+    }
+  }
 }
 
 .related-card__body {
