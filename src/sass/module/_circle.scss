@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.circle{
+.circle {
   display: inline-block;
-  width: rem(60);
-  height: rem(60);
+  width: remf(60);
+  height: remf(60);
   border-radius: 50%;
-  background: #FFBA6A;
-  text-align:center;
-  line-height: rem(80);
+  background: #ffba6a;
+  text-align: center;
+  line-height: remf(80);
 }

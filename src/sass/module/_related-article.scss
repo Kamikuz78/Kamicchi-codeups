@@ -3,22 +3,22 @@
 .related-article__headline {
   text-align: center;
   display: inline-block;
-  font-size: rem(16);
+  font-size: remf(16);
   color: $white;
   width: 100%;
   background-color: $gray;
-  letter-spacing: rem(2);
+  letter-spacing: remf(2);
   line-height: 1;
   border: 1px solid $white;
-  padding: rem(12) rem(9);
+  padding: remf(12) remf(9);
   @include mq(md) {
-    padding: rem(11) rem(9);
+    padding: remf(11) remf(9);
   }
 }
 
 .related-article__cards {
-  margin-top: rem(36);
+  margin-top: remf(36);
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: remf(80);
   }
 }

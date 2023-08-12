@@ -7,19 +7,19 @@
 .sub-blog__items .blog-card:first-child::before {
   display: inline-block;
   position: absolute;
-  top: rem(-15);
-  left: rem(-16);
+  top: remf(-15);
+  left: remf(-16);
   color: $black;
   content: "New";
   background-color: #ffba6a;
-  width: rem(60);
-  height: rem(60);
+  width: remf(60);
+  height: remf(60);
   border-radius: 50%;
   text-align: center;
-  line-height: rem(60);
-  letter-spacing: rem(2);
+  line-height: remf(60);
+  letter-spacing: remf(2);
   z-index: 999;
   @include mq(md) {
-    top: rem(-20);
+    top: remf(-20);
   }
 }

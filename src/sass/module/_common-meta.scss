@@ -3,22 +3,21 @@
 .common-meta__info {
   display: flex;
   align-items: center;
-  gap: rem(27);
+  gap: remf(27);
 }
 
 .common-meta__date {
-  min-width: rem(80);
+  min-width: remf(80);
   flex-shrink: 0;
-  letter-spacing: rem(0.4);
+  letter-spacing: remf(0.4);
 }
 
 .common-meta__category {
-  font-size: rem(16);
+  font-size: remf(16);
   font-weight: $regular;
-  // line-height: calc(20 / 14);
-  padding: rem(8) rem(20);
+  padding: remf(8) remf(20);
   border: 1px solid $white;
-  letter-spacing: rem(2);
+  letter-spacing: remf(2);
   flex-shrink: 0;
   @include mq(md) {
     font-weight: $medium;

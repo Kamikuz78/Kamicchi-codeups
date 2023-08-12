@@ -1,12 +1,12 @@
 @use "global" as *;
 
 .mv {
-  min-height: rem(600);
+  min-height: remf(600);
   height: 100vh;
   overflow: hidden;
   object-fit: cover;
   @include mq(md) {
-    min-height: rem(850);
+    min-height: remf(850);
   }
 }
 
@@ -29,7 +29,7 @@
 }
 .mv__swiper {
   // height: 100vh;
-  min-height: rem(600);
+  min-height: remf(600);
   overflow: hidden;
 }
 
@@ -42,12 +42,12 @@
 
 .mv img {
   height: 100vh;
-  min-height: rem(600);
+  min-height: remf(600);
   width: 100%;
   object-fit: cover;
   aspect-ratio: auto 375 / 770;
   @include mq(md) {
-    min-height: rem(850);
+    min-height: remf(850);
     aspect-ratio: 1280 / 850;
   }
 }
@@ -59,25 +59,25 @@
   z-index: 1;
   text-align: center;
   width: 100%;
-  letter-spacing: rem(0.5);
+  letter-spacing: remf(0.5);
   line-height: 1;
   font-weight: $bold;
 }
 
 .mv__title-main {
-  font-size: rem(28);
+  font-size: remf(28);
   @include mq(md) {
-    font-size: rem(50);
+    font-size: remf(50);
   }
 }
 
 .mv__title-sub {
-  font-size: rem(20);
-  margin-top: rem(24);
+  font-size: remf(20);
+  margin-top: remf(24);
   @include mq(md) {
-    font-size: rem(25);
+    font-size: remf(25);
   }
 }
 .slick-slide {
-  min-height: rem(600);
+  min-height: remf(600);
 }

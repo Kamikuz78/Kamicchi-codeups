@@ -1,17 +1,17 @@
 @use "global" as *;
 
 .footer-layout {
-  // margin: rem(52) 0 rem(60);
-  margin: rem(49) 0 rem(60);
+  // margin: remf(52) 0 remf(60);
+  margin: remf(49) 0 remf(60);
   @include mq(md) {
-    margin-top: rem(24);
-    margin-bottom: rem(30);
+    margin-top: remf(24);
+    margin-bottom: remf(30);
   }
 }
 
 .footer-layout.footer-layout--sub {
   @include mq(md) {
-    margin-top: rem(26);
-    margin-bottom: rem(22);
+    margin-top: remf(26);
+    margin-bottom: remf(22);
   }
 }

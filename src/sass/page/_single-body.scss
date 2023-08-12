@@ -2,40 +2,40 @@
 
 .single-body__inner {
   width: 100%;
-  max-width: rem(600);
+  max-width: remf(600);
   padding-right: $padding-sp;
   padding-left: $padding-sp;
   margin-right: auto;
   margin-left: auto;
   @include mq("md") {
-    max-width: rem(850);
+    max-width: remf(850);
     padding-right: $padding-pc;
     padding-left: $padding-pc;
   }
 }
 
 .single-body__title h1 {
-  font-size: rem(20);
-  line-height: rem(35);
+  font-size: remf(20);
+  line-height: remf(35);
   font-weight: $regular;
-  letter-spacing: rem(0.4);
+  letter-spacing: remf(0.4);
   @include mq(md) {
-    font-size: rem(23);
+    font-size: remf(23);
     font-weight: $medium;
   }
 }
 
 .single-body__meta {
-  margin-top: rem(14);
+  margin-top: remf(14);
   @include mq(md) {
-    margin-top: rem(31);
+    margin-top: remf(31);
   }
 }
 
 .single-body__box {
-  margin-top: rem(16);
+  margin-top: remf(16);
   @include mq(md) {
-    margin-top: rem(32);
+    margin-top: remf(32);
   }
 }
 
@@ -45,7 +45,7 @@
   object-fit: cover;
   @include mq(md) {
     width: 100%;
-    max-width: rem(799);
+    max-width: remf(799);
     margin-right: 0;
     margin-left: 0;
   }
@@ -61,49 +61,49 @@
 }
 
 .single-body__content {
-  margin-top: rem(16);
+  margin-top: remf(16);
   display: grid;
-  gap: rem(24);
+  gap: remf(24);
   @include mq(md) {
-    margin-top: rem(32);
-    gap: rem(32);
+    margin-top: remf(32);
+    gap: remf(32);
   }
 
   p {
-    // font-size: rem(16);
-    line-height: rem(35);
+    // font-size: remf(16);
+    line-height: remf(35);
     letter-spacing: 0.4px;
-    // margin-top: rem(24);
+    // margin-top: remf(24);
     @include mq(md) {
-      // margin-top: rem(32);
+      // margin-top: remf(32);
     }
   }
 
   h2 {
-    // margin-top: rem(24);
-    font-size: rem(20);
+    // margin-top: remf(24);
+    font-size: remf(20);
     font-weight: $regular;
-    letter-spacing: rem(2);
+    letter-spacing: remf(2);
     line-height: 1.5;
-    padding-left: rem(13);
+    padding-left: remf(13);
     position: relative;
     &::before {
       content: "";
       position: absolute;
-      width: rem(3);
+      width: remf(3);
       height: 100%;
-      left: rem(2);
+      left: remf(2);
       background-color: #c4c4c4;
     }
     @include mq(md) {
-      padding-left: rem(9);
+      padding-left: remf(9);
     }
   }
 
   h3 {
-    font-size: rem(18);
+    font-size: remf(18);
     font-weight: $regular;
-    letter-spacing: rem(2);
+    letter-spacing: remf(2);
     display: block;
     line-height: 1.4;
     @include mq(md) {
@@ -117,9 +117,9 @@
   background-repeat: no-repeat;
   background-size: 100% 3px;
   background-position: bottom;
-  padding-bottom: rem(2);
+  padding-bottom: remf(2);
 }
 
 .blog-detail-items h3 {
-  padding-left: rem(9);
+  padding-left: remf(9);
 }
