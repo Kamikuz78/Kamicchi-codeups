@@ -3,26 +3,26 @@
 .tab {
   display: flex;
   flex-wrap: wrap;
-  column-gap: rem(8);
-  row-gap: rem(14);
+  column-gap: remf(8);
+  row-gap: remf(14);
   align-items: center;
-  letter-spacing: rem(2);
+  letter-spacing: remf(2);
   justify-content: flex-start;
   @include mq(md) {
-    column-gap: rem(29);
+    column-gap: remf(29);
   }
 }
 .tab__label {
   text-align: center;
   color: White;
-  padding: rem(7) rem(8);
-  font-size: rem(16);
+  padding: remf(7) remf(8);
+  font-size: remf(16);
   line-height: 1;
-  letter-spacing: rem(2);
+  letter-spacing: remf(2);
   border-bottom: solid 1px #000;
   @include mq(md) {
     transition: 0.3s;
-    padding: rem(7) rem(10);
+    padding: remf(7) remf(10);
     border-bottom: none;
   }
 }

@@ -1,18 +1,18 @@
 @use "global" as *;
 .works-cards {
   align-items: center;
-  margin-top: rem(16);
+  margin-top: remf(16);
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   display: grid;
-  gap: rem(48) rem(48);
+  gap: remf(48) remf(48);
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: remf(40);
     margin-right: auto;
     margin-left: auto;
-    max-width: rem(1200);
+    max-width: remf(1200);
     grid-template-columns: 1fr 1fr;
-    gap: rem(114) rem(48);
+    gap: remf(114) remf(48);
   }
 }
 
@@ -25,8 +25,8 @@
 .works-card__category {
   background-color: $black;
   color: $white;
-  padding: rem(12) rem(20);
-  letter-spacing: rem(2);
+  padding: remf(12) remf(20);
+  letter-spacing: remf(2);
   line-height: 1;
   position: absolute;
   z-index: 1;
@@ -35,11 +35,11 @@
 }
 
 .works-card__title {
-  margin-top: rem(23);
+  margin-top: remf(23);
   width: 100%;
   text-align: center;
-  font-size: rem(20);
+  font-size: remf(20);
   font-weight: $medium;
-  letter-spacing: rem(2);
+  letter-spacing: remf(2);
   line-height: 1.75;
 }

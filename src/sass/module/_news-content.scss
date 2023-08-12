@@ -12,22 +12,22 @@
 .news-content__info {
   display: flex;
   align-items: center;
-  gap: rem(29);
+  gap: remf(29);
   @include mq(md) {
-    gap: rem(48);
+    gap: remf(48);
   }
 }
 
 .news-content__date {
-  min-width: rem(80);
+  min-width: remf(80);
   flex-shrink: 0;
 }
 
 .news-content__category {
-  font-size: rem(14);
+  font-size: remf(14);
   font-weight: $regular;
   line-height: 1;
-  padding: rem(7.5) rem(21);
+  padding: remf(7.5) remf(21);
   border: 1px solid $white;
   flex-shrink: 0;
   @include mq(md) {
@@ -38,12 +38,12 @@
 
 .news-content__link {
   display: inline-block;
-  margin-top: rem(16);
+  margin-top: remf(16);
   @include mq(md) {
-    margin-top: rem(4);
-    margin-left: rem(60);
+    margin-top: remf(4);
+    margin-left: remf(60);
     max-width: calc(576 / 860) * 100%;
-    width: rem(576);
+    width: remf(576);
   }
 }
 

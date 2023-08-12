@@ -14,13 +14,13 @@
   height: auto;
   // margin: 0 0 10px 0;
   @include mq(md) {
-    width: rem(800);
+    width: remf(800);
   }
 
   .swiper-slide {
     width: 100%;
     @include mq(md) {
-      height: rem(427);
+      height: remf(427);
     }
 
     img {
@@ -41,22 +41,22 @@
 .works-gallery-thumbs {
   width: 100%;
   padding: 0;
-  margin-top: rem(32);
+  margin-top: remf(32);
   overflow: hidden;
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: remf(40);
   }
 
   .swiper-slide {
-    width: rem(163);
-    height: rem(163);
+    width: remf(163);
+    height: remf(163);
     flex-shrink: 0;
     text-align: center;
     overflow: hidden;
     opacity: 0.5;
     @include mq(md) {
-      width: rem(93);
-      height: rem(93);
+      width: remf(93);
+      height: remf(93);
     }
   }
 
@@ -76,12 +76,12 @@
 
 .gallery__next-button,
 .gallery__prev-button {
-  width: rem(50);
-  height: rem(50);
+  width: remf(50);
+  height: remf(50);
 }
 
 .gallery__prev-button {
-  margin-left: rem(7);
+  margin-left: remf(7);
 }
 
 .swiper-button-prev::after,
@@ -98,5 +98,5 @@
 }
 
 .gallery__next-button {
-  margin-right: rem(7);
+  margin-right: remf(7);
 }

@@ -458,7 +458,7 @@ select::-ms-expand {
   height: 60px;
   height: 3.75rem;
   border-radius: 50%;
-  background: #FFBA6A;
+  background: #ffba6a;
   text-align: center;
   line-height: 80px;
   line-height: 5rem;
@@ -1810,8 +1810,8 @@ select::-ms-expand {
 }
 
 .pagination__list--trio {
-  gap: 0 48px;
-  gap: 0 3rem;
+  gap: 24px 48px;
+  gap: 1.5rem 3rem;
 }
 
 .pagination__item:hover {
@@ -3282,8 +3282,8 @@ letter-spacing: 2px; */
 }
 
 .sub-blog-layout {
-  margin-top: 35px;
-  margin-top: 2.1875rem;
+  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 @media screen and (min-width: 768px) {
   .sub-blog-layout {

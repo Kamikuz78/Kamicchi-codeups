@@ -12,35 +12,35 @@
   color: #ffea2e;
   opacity: 0.3;
   text-align: center;
-  font-size: rem(40);
+  font-size: remf(40);
   font-weight: $regular;
   line-height: calc(35 / 30);
-  letter-spacing: rem(2);
+  letter-spacing: remf(2);
   @include mq(md) {
-    font-size: rem(60);
+    font-size: remf(60);
   }
 }
 
 .error__text {
   text-align: center;
-  font-size: rem(20);
+  font-size: remf(20);
   font-weight: $regular;
   color: #fff;
-  letter-spacing: rem(2);
-  margin-top: rem(73);
+  letter-spacing: remf(2);
+  margin-top: remf(73);
   @include mq(md) {
-    margin-top: rem(63);
-    font-size: rem(30);
+    margin-top: remf(63);
+    font-size: remf(30);
     line-height: 35px; /* 116.667% */
   }
 }
 
 .error__button-wrapper {
   text-align: center;
-  margin-top: rem(47);
-  padding-bottom: rem(120);
+  margin-top: remf(47);
+  padding-bottom: remf(120);
   @include mq(md) {
-    margin-top: rem(80);
-    padding-bottom: rem(150);
+    margin-top: remf(80);
+    padding-bottom: remf(150);
   }
 }

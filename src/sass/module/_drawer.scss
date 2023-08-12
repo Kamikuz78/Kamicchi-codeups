@@ -8,7 +8,7 @@
 }
 
 .drawer__items {
-  padding: rem(193) 0;
+  padding: remf(193) 0;
   overflow: scroll;
   height: 100%;
 }
@@ -20,10 +20,9 @@
 .drawer__item a {
   display: block;
   text-align: center;
-  padding: rem(16) 0;
+  padding: remf(16) 0;
   height: inherit;
   font-weight: $regular;
   letter-spacing: calc(2 / 16) * 1em;
   line-height: calc(23 / 16);
-  
 }

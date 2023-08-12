@@ -3,22 +3,22 @@
 .common-button {
   text-align: center;
   display: inline-block;
-  font-size: rem(20);
+  font-size: remf(20);
   color: $white;
   width: 100%;
   background-color: $gray;
   cursor: pointer;
-  letter-spacing: rem(2);
+  letter-spacing: remf(2);
   line-height: 1;
   border: 1px solid $white;
-  padding: rem(14) rem(9);
+  padding: remf(14) remf(9);
   position: relative;
   z-index: 1;
   @include mq(md) {
-    font-size: rem(16);
-    padding: rem(21) rem(9);
+    font-size: remf(16);
+    padding: remf(21) remf(9);
     transition: 0.3s;
-    width: rem(360);
+    width: remf(360);
   }
 }
 
@@ -49,18 +49,18 @@
 
 .common-button--contact {
   @include mq(md) {
-    font-size: rem(20);
+    font-size: remf(20);
     letter-spacing: calc(2 / 20) * 1em;
-    padding: rem(19) rem(9);
-    width: rem(360);
+    padding: remf(19) remf(9);
+    width: remf(360);
   }
 }
 
 .common-button--news {
   @include mq(md) {
     background-color: $white;
-    padding: rem(6) rem(10);
-    width: rem(134);
+    padding: remf(6) remf(10);
+    width: remf(134);
     color: $black;
     letter-spacing: normal;
     align-self: flex-start;
@@ -68,14 +68,14 @@
 }
 
 .common-button--article {
-  font-size: rem(16);
-  padding: rem(11) rem(10);
+  font-size: remf(16);
+  padding: remf(11) remf(10);
   width: 100%;
 }
 
 .blog-detail-article__inner {
-  margin-top: rem(32);
+  margin-top: remf(32);
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: remf(80);
   }
 }

@@ -1,13 +1,13 @@
 @use "global" as *;
 
 .sub-contact-layout {
-  margin-top: rem(120);
+  margin-top: remf(120);
   @include mq(md) {
-    margin-top: rem(149);
-    margin-bottom: rem(0);
+    margin-top: remf(149);
+    margin-bottom: remf(0);
   }
 }
 
 .sub-contact-layout--p-contact {
-  margin-top: rem(98);
+  margin-top: remf(98);
 }
