@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .overview__subtitle {
-  top: rem(-38);
+  top: remf(-38);
   @include mq(md) {
-    top: rem(-31);
+    top: remf(-31);
   }
 }
 
@@ -11,15 +11,15 @@
   margin-left: auto;
   margin-right: auto;
   @include mq(md) {
-    margin: 0 rem(66);
+    margin: 0 remf(66);
   }
 }
 
 .overview__body {
-  margin-top: rem(54);
+  margin-top: remf(54);
   width: 100%;
   @include mq(md) {
-    margin-top: rem(39);
+    margin-top: remf(39);
   }
 }
 
@@ -27,19 +27,19 @@
   content: "";
   display: block;
   position: absolute;
-  top: rem(-642);
+  top: remf(-642);
   right: 0;
   transform-origin: 100% 0%;
   background-color: $yellow;
-  width: rem(1);
+  width: remf(1);
   height: calc(1448 / 375) * 100%;
   transform: rotate(15.05deg);
   z-index: -1;
   @include mq(md) {
     height: calc(1712 / 1280) * 100vw;
-    // top: rem(-150);
+    // top: remf(-150);
     top: -150px;
-    right: rem(68);
+    right: remf(68);
     transform: rotate(45deg);
   }
 }
@@ -47,8 +47,7 @@
 .overview__content {
   width: 100%;
   @include mq(md) {
-    padding: rem(80) 0;
-    background: linear-gradient(270deg, transparent 0% calc(50% - rem(256)), #333 calc(50% - rem(256)) 100vw);
+    padding: remf(80) 0;
+    background: linear-gradient(270deg, transparent 0% calc(50% - remf(256)), #333 calc(50% - remf(256)) 100vw);
   }
 }
-

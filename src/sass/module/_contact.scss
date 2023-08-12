@@ -2,9 +2,9 @@
 
 .contact {
   background-color: #3d3d3d;
-  padding: rem(73) 0 rem(64);
+  padding: remf(73) 0 remf(64);
   @include mq(md) {
-    padding: rem(154) 0 rem(149);
+    padding: remf(154) 0 remf(149);
   }
 }
 
@@ -14,9 +14,9 @@
 }
 
 .contact__subtitle {
-  top: rem(-42);
+  top: remf(-42);
   @include mq(md) {
-    top: rem(-72);
+    top: remf(-72);
   }
 }
 
@@ -25,32 +25,32 @@
 }
 
 .contact__text {
-  margin-top: rem(23);
+  margin-top: remf(23);
   letter-spacing: calc(2 / 16) * 1em;
   line-height: calc(23.17 / 16);
   @include mq(md) {
-    margin-top: rem(24);
+    margin-top: remf(24);
     text-align: center;
   }
 }
 
 .contact__text.contact__text--sub {
   @include mq(md) {
-    margin-top: rem(31);
+    margin-top: remf(31);
   }
 }
 
 .contact__button-wrapper {
   text-align: center;
-  margin-top: rem(47);
+  margin-top: remf(47);
   @include mq(md) {
-    margin-top: rem(60);
+    margin-top: remf(60);
   }
 }
 
 .contact__button-wrapper.contact__button-wrapper--sub {
-  margin-top: rem(43);
+  margin-top: remf(43);
   @include mq(md) {
-    margin-top: rem(54);
+    margin-top: remf(54);
   }
 }

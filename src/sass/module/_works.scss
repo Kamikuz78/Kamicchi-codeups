@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .works__subtitle {
-  top: rem(-41);
+  top: remf(-41);
   @include mq(md) {
-    top: rem(-34);
+    top: remf(-34);
   }
 }
 
@@ -12,24 +12,23 @@
   margin-right: auto;
 }
 .works__body {
-  margin-top: rem(54);
+  margin-top: remf(54);
   // width: 100%;
   @include mq(md) {
-    margin-top: rem(39);
+    margin-top: remf(39);
   }
 }
 
 .works__content {
   width: 100%;
   @include mq(md) {
-    padding: rem(80) 0;
-    background: linear-gradient(90deg, transparent 0% calc(50% - rem(256)), #333 calc(50% - rem(256)) 100vw);
+    padding: remf(80) 0;
+    background: linear-gradient(90deg, transparent 0% calc(50% - remf(256)), #333 calc(50% - remf(256)) 100vw);
   }
 }
 
-
 // .works__content .common__item-img {
 //   @include mq(md) {
-//     margin: 0 0 0 rem(31);
+//     margin: 0 0 0 remf(31);
 //   }
 // }

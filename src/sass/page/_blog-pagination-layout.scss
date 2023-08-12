@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .blog-pagination-layout {
-  margin-top: rem(80);
+  margin-top: remf(80);
   @include mq(md) {
-    margin-top: rem(104);
+    margin-top: remf(104);
   }
 }

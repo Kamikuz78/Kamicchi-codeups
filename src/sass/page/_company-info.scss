@@ -1,36 +1,36 @@
 @use "global" as *;
 
 .company-info__item {
-  padding: rem(16) 0;
+  padding: remf(16) 0;
   border-bottom: 1px solid $white;
   display: flex;
-  font-size: rem(13);
-  line-height: rem(24);
+  font-size: remf(13);
+  line-height: remf(24);
   font-weight: $regular;
   @include mq(md) {
-    font-size: rem(16);
-    padding: rem(30) 0 rem(40);
+    font-size: remf(16);
+    padding: remf(30) 0 remf(40);
   }
 }
 
 .company-info__item dt {
-  margin-left: rem(5);
-  width: rem(110);
+  margin-left: remf(5);
+  width: remf(110);
   @include mq(md) {
     margin-left: 0;
-    width: rem(152);
+    width: remf(152);
   }
 }
 
 .company-info__item dd {
-  width: calc(100% - rem(110));
+  width: calc(100% - remf(110));
   @include mq(md) {
-    width: calc(100% - rem(152));
+    width: calc(100% - remf(152));
   }
 }
 
 .company-info__map {
-  margin-top: rem(120);
+  margin-top: remf(120);
   aspect-ratio: 375 / 300;
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);

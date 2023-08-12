@@ -2,8 +2,8 @@
 
 .content-layout {
   position: relative;
-  margin-top: rem(54);
+  margin-top: remf(54);
   @include mq(md) {
-    margin-top: rem(195);
+    margin-top: remf(195);
   }
 }

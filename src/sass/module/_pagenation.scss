@@ -5,7 +5,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  gap: 0 rem(16);
+  // gap: 0 remf(16);
   list-style-type: none;
 }
 
@@ -14,9 +14,9 @@
   grid-row: 1;
   justify-content: center;
   text-align: center;
-  max-height: rem(24);
+  max-height: remf(24);
   line-height: 1;
-  letter-spacing: rem(2);
+  letter-spacing: remf(2);
   border: 1px solid $white;
   color: $white;
   font-weight: $regular;
@@ -27,13 +27,13 @@
 }
 
 .pagination__item:not(:last-child):not(:first-child) a {
-  padding: rem(3) rem(6.5);
+  padding: remf(3) remf(6.5);
   display: block;
 }
 
 .pagination__list--trio {
-  // grid-template-columns: rem(71) rem(71) rem(71);
-  gap: 0 rem(48);
+  // grid-template-columns: remf(71) remf(71) remf(71);
+  gap: 0 remf(48);
 }
 
 .pagination__item:hover {
@@ -57,15 +57,19 @@
 // }
 
 .pagination__item--text a {
-  min-width: rem(71);
-  padding: rem(4) rem(11);
+  min-width: remf(71);
+  padding: remf(4) remf(11);
   display: block;
 }
 
 .pagination__list ul li:first-child {
-  margin-right: rem(8);
+  margin-right: remf(8);
 }
 
 // .pagination__item: (: last-child) {
-//   margin-left: rem(8);
+//   margin-left: remf(8);
 // }
+
+.pagination__item + .pagination__item {
+  margin-right: remf(8);
+}

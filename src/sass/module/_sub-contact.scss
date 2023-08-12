@@ -2,12 +2,11 @@
 
 .sub-contact {
   background-color: #3d3d3d;
-  padding: rem(73) 0 rem(64);
+  padding: remf(73) 0 remf(64);
   @include mq(md) {
-    padding-top: rem(150);
-    padding-bottom: rem(150);
+    padding-top: remf(150);
+    padding-bottom: remf(150);
   }
-
 }
 
 .sub-contact__header {
@@ -15,22 +14,22 @@
   z-index: 1;
 }
 .sub-contact__subtitle {
-  top: rem(-36);
+  top: remf(-36);
   @include mq(md) {
-    top: rem(-72);
+    top: remf(-72);
   }
 }
 
 .sub-contact__title {
-  font-size: rem(25);
+  font-size: remf(25);
 }
 
 .sub-contact__text {
-  margin-top: rem(20);
+  margin-top: remf(20);
   letter-spacing: calc(2 / 16) * 1em;
   line-height: calc(23.17 / 16);
   @include mq(md) {
-    margin-top: rem(35);
+    margin-top: remf(35);
     text-align: center;
   }
 }
@@ -41,8 +40,8 @@
 
 .sub-contact__button-wrapper {
   text-align: center;
-  margin-top: rem(47);
+  margin-top: remf(47);
   @include mq(md) {
-    margin-top: rem(54);
+    margin-top: remf(54);
   }
 }

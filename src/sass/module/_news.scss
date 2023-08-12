@@ -1,24 +1,24 @@
 @use "global" as *;
 
 .news {
-  padding: rem(22) 0 rem(101);
+  padding: remf(22) 0 remf(101);
   @include mq(md) {
-    padding: rem(32) 0 0;
+    padding: remf(32) 0 0;
   }
 }
 
 .news__inner {
   margin: 0 auto;
-  max-width: rem(600);
+  max-width: remf(600);
   @include mq(md) {
-    max-width: rem(1150);
+    max-width: remf(1150);
     padding-left: 25px;
     padding-right: 25px;
   }
 }
 
 .news__items {
-  margin: 0 rem(19.5);
+  margin: 0 remf(19.5);
   @include mq(md) {
     margin: 0 auto;
     display: flex;
@@ -27,14 +27,14 @@
 }
 
 .news__button-wrapper {
-  margin-top: rem(23);
+  margin-top: remf(23);
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   text-align: center;
   @include mq(md) {
-    max-width: rem(134);
-    margin: rem(1) 0 0 rem(45);
+    max-width: remf(134);
+    margin: remf(1) 0 0 remf(45);
     display: flex;
     justify-content: start;
   }
@@ -42,10 +42,10 @@
 
 .news__button {
   @include mq(md) {
-    font-size: rem(16);
+    font-size: remf(16);
     background-color: $white;
-    padding: rem(2.3) rem(10);
-    max-width: rem(134);
+    padding: remf(2.3) remf(10);
+    max-width: remf(134);
     color: $black;
     letter-spacing: normal;
     line-height: 1.5;

@@ -458,7 +458,7 @@ select::-ms-expand {
   height: 60px;
   height: 3.75rem;
   border-radius: 50%;
-  background: #FFBA6A;
+  background: #ffba6a;
   text-align: center;
   line-height: 80px;
   line-height: 5rem;
@@ -1776,8 +1776,6 @@ select::-ms-expand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 16px;
-  gap: 0 1rem;
   list-style-type: none;
 }
 
@@ -1838,6 +1836,11 @@ select::-ms-expand {
 }
 
 .pagination__list ul li:first-child {
+  margin-right: 8px;
+  margin-right: 0.5rem;
+}
+
+.pagination__item + .pagination__item {
   margin-right: 8px;
   margin-right: 0.5rem;
 }
