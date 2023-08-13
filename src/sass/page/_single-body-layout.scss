@@ -6,3 +6,10 @@
     margin-top: remf(88);
   }
 }
+
+.single-body-layout--works {
+  margin-top: remf(50);
+  @include mq(md) {
+    margin-top: remf(88);
+  }
+}

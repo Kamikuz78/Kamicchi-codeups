@@ -1,73 +1,66 @@
 @use "global" as *;
 
-.pagination__list {
-  display: flex;
-  display: grid;
+.wp-pagenavi {
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  // gap: 0 remf(16);
   list-style-type: none;
+  line-height: 1;
 }
 
-.pagination__item {
-  // display: inline-block;
-  grid-row: 1;
-  justify-content: center;
-  text-align: center;
-  // max-height: remf(24);
-  line-height: 1;
-  letter-spacing: remf(2);
-  border: 1px solid $white;
+.wp-pagenavi a,
+.wp-pagenavi span {
+  display: inline-block;
   color: $white;
+  border: 1px solid $white;
   font-weight: $regular;
-
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  font-size: remf(16);
   @include mq(md) {
-    transition: 0.3s;
+    transition: 0.2s ease-in-out;
   }
 }
 
-.pagination__item:not(:last-child):not(:first-child) a {
-  padding: remf(4) remf(6.5);
-  display: block;
+.wp-pagenavi a.page.smaller,
+.wp-pagenavi a.page.larger,
+.wp-pagenavi span.current {
+  padding: remf(3) remf(7);
+  margin: 0 remf(8);
 }
 
-.pagination__list--trio {
-  // grid-template-columns: remf(71) remf(71) remf(71);
-  gap: 0 remf(48);
-}
-
-.pagination__item:hover {
-  background-color: $white;
+.wp-pagenavi a:hover {
   color: $gray;
+  background-color: $white;
 }
 
-.pagination__item:not(:hover) {
-  text-decoration: none;
+.wp-pagenavi a.previouspostslink,
+.wp-pagenavi a.nextpostslink {
+  padding: remf(3) remf(10);
+}
+.previouspostslink,
+.nextpostslink,
+.pagination--detail .current {
+  min-width: remf(71);
 }
 
-.pagination__item--current {
+.wp-pagenavi span.current {
   background-color: $white;
   color: $gray;
   pointer-events: none;
 }
 
-.pagination__item.previouspostslink,
-.pagination__item.nextpostslink a {
-  min-width: remf(71);
-  padding: remf(4) remf(11);
-  display: block;
-  text-align: center;
+.pagination--list .previouspostslink {
+  margin-right: remf(16);
 }
 
-.pagination__item + .pagination__item {
-  margin-right: remf(11);
+.pagination--list .nextpostslink {
+  margin-left: remf(16);
+}
+.pagination--detail .previouspostslink {
+  margin-right: remf(48);
 }
 
-.previouspostslink {
-  margin-right: remf(22);
-}
-
-.pagination__item + .nextpostslink {
-  margin-left: remf(14);
-  margin-right: remf(0);
+.pagination--detail .nextpostslink {
+  margin-left: remf(48);
 }
