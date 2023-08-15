@@ -1776,8 +1776,6 @@ select::-ms-expand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 16px;
-  gap: 0 1rem;
   list-style-type: none;
 }
 
@@ -1787,8 +1785,6 @@ select::-ms-expand {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  max-height: 24px;
-  max-height: 1.5rem;
   line-height: 1;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
@@ -1804,8 +1800,8 @@ select::-ms-expand {
 }
 
 .pagination__item:not(:last-child):not(:first-child) a {
-  padding: 3px 6.5px;
-  padding: 0.1875rem 0.40625rem;
+  padding: 4px 6.5px;
+  padding: 0.25rem 0.40625rem;
   display: block;
 }
 
@@ -1829,22 +1825,36 @@ select::-ms-expand {
   pointer-events: none;
 }
 
-.pagination__item--text a {
+.pagination__item.previouspostslink,
+.pagination__item.nextpostslink a {
   min-width: 71px;
   min-width: 4.4375rem;
   padding: 4px 11px;
   padding: 0.25rem 0.6875rem;
   display: block;
+  text-align: center;
 }
 
-.pagination__list ul li:first-child {
-  margin-right: 8px;
-  margin-right: 0.5rem;
+.pagination__item + .pagination__item {
+  margin-right: 11px;
+  margin-right: 0.6875rem;
+}
+
+.previouspostslink {
+  margin-right: 22px;
+  margin-right: 1.375rem;
+}
+
+.pagination__item + .nextpostslink {
+  margin-left: 14px;
+  margin-left: 0.875rem;
+  margin-right: 0px;
+  margin-right: 0rem;
 }
 
 .pagination-layout {
-  margin-top: 80px;
-  margin-top: 5rem;
+  margin-top: 77px;
+  margin-top: 4.8125rem;
 }
 @media screen and (min-width: 768px) {
   .pagination-layout {
@@ -3422,8 +3432,8 @@ letter-spacing: 2px; */
 }
 
 .works-card__title {
-  margin-top: 23px;
-  margin-top: 1.4375rem;
+  margin-top: 11px;
+  margin-top: 0.6875rem;
   width: 100%;
   text-align: center;
   font-size: 20px;

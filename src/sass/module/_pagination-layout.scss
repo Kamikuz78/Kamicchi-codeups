@@ -1,7 +1,11 @@
 @use "global" as *;
 
 .pagination-layout {
+<<<<<<< HEAD
   margin-top: remf(80);
+=======
+  margin-top: remf(77);
+>>>>>>> 1e2c5386cae391241786d153e1d0e48ee1e7e5d5
   @include mq(md) {
     margin-top: remf(104);
   }
