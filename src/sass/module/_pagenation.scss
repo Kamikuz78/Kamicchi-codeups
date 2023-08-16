@@ -26,7 +26,7 @@
 .wp-pagenavi a.page.larger,
 .wp-pagenavi span.current {
   padding: remf(3) remf(7);
-  margin: 0 remf(8);
+  margin: 0 remf(6);
 }
 
 .wp-pagenavi a:hover {
@@ -51,11 +51,11 @@
 }
 
 .pagination--list .previouspostslink {
-  margin-right: remf(16);
+  margin-right: remf(14);
 }
 
 .pagination--list .nextpostslink {
-  margin-left: remf(16);
+  margin-left: remf(14);
 }
 .pagination--detail .previouspostslink {
   margin-right: remf(48);
