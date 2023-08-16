@@ -1495,11 +1495,6 @@ select::-ms-expand {
   }
 }
 
-.slick-slide {
-  min-height: 600px;
-  min-height: 37.5rem;
-}
-
 @media screen and (min-width: 768px) {
   .news-content {
     display: -webkit-box;
@@ -2256,9 +2251,9 @@ li:not(:last-child).pc-nav__item a:hover::after {
           justify-content: center;
 }
 
-.sub-mv__title {
+.sub-mv__title h2 {
   position: absolute;
-  top: 50.5%;
+  top: 47%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2273,8 +2268,8 @@ li:not(:last-child).pc-nav__item a:hover::after {
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  .sub-mv__title {
-    top: 50%;
+  .sub-mv__title h2 {
+    top: 48%;
     font-size: 2.1875rem;
   }
 }
@@ -3237,29 +3232,6 @@ letter-spacing: 2px; */
   }
 }
 
-.works-cards {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 16px;
-  margin-top: 1rem;
-  margin-right: calc(50% - 50vw);
-  margin-left: calc(50% - 50vw);
-  display: grid;
-  gap: 48px 48px;
-  gap: 3rem 3rem;
-}
-@media screen and (min-width: 768px) {
-  .works-cards {
-    margin-top: 2.5rem;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 75rem;
-    grid-template-columns: 1fr 1fr;
-    gap: 7.125rem 3rem;
-  }
-}
-
 .works-card__image {
   aspect-ratio: 375/250;
   overflow: hidden;
@@ -3281,8 +3253,8 @@ letter-spacing: 2px; */
 }
 
 .works-card__title {
-  margin-top: 11px;
-  margin-top: 0.6875rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -3291,6 +3263,34 @@ letter-spacing: 2px; */
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
   line-height: 1.75;
+}
+@media screen and (min-width: 768px) {
+  .works-card__title {
+    margin-top: 0.6875rem;
+  }
+}
+
+.works-cards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+  margin-top: 1rem;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  display: grid;
+  gap: 49px 48px;
+  gap: 3.0625rem 3rem;
+}
+@media screen and (min-width: 768px) {
+  .works-cards {
+    margin-top: 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 75rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 7.125rem 3rem;
+  }
 }
 
 .works-detail-list-layout {

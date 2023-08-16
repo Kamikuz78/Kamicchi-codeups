@@ -14,9 +14,9 @@
   justify-content: center;
 }
 
-.sub-mv__title {
+.sub-mv__title h2{
   position: absolute;
-  top: 50.5%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -27,7 +27,7 @@
   line-height: 1;
   font-weight: $bold;
   @include mq(md) {
-    top: 50%;
+    top: 48%;
     font-size: remf(35);
   }
 }

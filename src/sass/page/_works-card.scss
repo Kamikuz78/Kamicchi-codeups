@@ -1,20 +1,4 @@
 @use "global" as *;
-.works-cards {
-  align-items: center;
-  margin-top: remf(16);
-  margin-right: calc(50% - 50vw);
-  margin-left: calc(50% - 50vw);
-  display: grid;
-  gap: remf(48) remf(48);
-  @include mq(md) {
-    margin-top: remf(40);
-    margin-right: auto;
-    margin-left: auto;
-    max-width: remf(1200);
-    grid-template-columns: 1fr 1fr;
-    gap: remf(114) remf(48);
-  }
-}
 
 .works-card__image {
   aspect-ratio: 375 / 250;
@@ -35,11 +19,14 @@
 }
 
 .works-card__title {
-  margin-top: remf(11);
+  margin-top: remf(22);
   width: 100%;
   text-align: center;
   font-size: remf(20);
   font-weight: $medium;
   letter-spacing: remf(2);
   line-height: 1.75;
+  @include mq(md) {
+    margin-top: remf(11);
+  }
 }
