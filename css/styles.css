@@ -2372,7 +2372,7 @@ li:not(:last-child).pc-nav__item a:hover::after {
   }
 }
 
-.sub-mv__title.sub-mv__title--works {
+.sub-mv__title {
   top: 47.2%;
 }
 
