@@ -792,6 +792,68 @@ select::-ms-expand {
   }
 }
 
+.sub-contact {
+  background-color: #3d3d3d;
+  padding: 73px 0 64px;
+  padding: 4.5625rem 0 4rem;
+}
+@media screen and (min-width: 768px) {
+  .sub-contact {
+    padding-top: 9.375rem;
+    padding-bottom: 9.375rem;
+  }
+}
+
+.sub-contact__header {
+  position: relative;
+  z-index: 1;
+}
+
+.sub-contact__subtitle {
+  top: -36px;
+  top: -2.25rem;
+}
+@media screen and (min-width: 768px) {
+  .sub-contact__subtitle {
+    top: -4.5rem;
+  }
+}
+
+.sub-contact__title {
+  font-size: 25px;
+  font-size: 1.5625rem;
+}
+
+.sub-contact__text {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  letter-spacing: 0.125em;
+  line-height: 1.448125;
+}
+@media screen and (min-width: 768px) {
+  .sub-contact__text {
+    margin-top: 2.1875rem;
+    text-align: center;
+  }
+}
+
+.sub-contact__inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-contact__button-wrapper {
+  text-align: center;
+  margin-top: 47px;
+  margin-top: 2.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .sub-contact__button-wrapper {
+    margin-top: 3.375rem;
+  }
+}
+
 .content-card {
   width: auto;
   overflow: hidden;
@@ -2166,68 +2228,6 @@ li:not(:last-child).pc-nav__item a:hover::after {
 .sub-contact-layout--p-contact {
   margin-top: 98px;
   margin-top: 6.125rem;
-}
-
-.sub-contact {
-  background-color: #3d3d3d;
-  padding: 73px 0 64px;
-  padding: 4.5625rem 0 4rem;
-}
-@media screen and (min-width: 768px) {
-  .sub-contact {
-    padding-top: 9.375rem;
-    padding-bottom: 9.375rem;
-  }
-}
-
-.sub-contact__header {
-  position: relative;
-  z-index: 1;
-}
-
-.sub-contact__subtitle {
-  top: -36px;
-  top: -2.25rem;
-}
-@media screen and (min-width: 768px) {
-  .sub-contact__subtitle {
-    top: -4.5rem;
-  }
-}
-
-.sub-contact__title {
-  font-size: 25px;
-  font-size: 1.5625rem;
-}
-
-.sub-contact__text {
-  margin-top: 20px;
-  margin-top: 1.25rem;
-  letter-spacing: 0.125em;
-  line-height: 1.448125;
-}
-@media screen and (min-width: 768px) {
-  .sub-contact__text {
-    margin-top: 2.1875rem;
-    text-align: center;
-  }
-}
-
-.sub-contact__inner {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.sub-contact__button-wrapper {
-  text-align: center;
-  margin-top: 47px;
-  margin-top: 2.9375rem;
-}
-@media screen and (min-width: 768px) {
-  .sub-contact__button-wrapper {
-    margin-top: 3.375rem;
-  }
 }
 
 .sub-mv {
