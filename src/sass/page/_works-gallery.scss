@@ -38,7 +38,7 @@
   transition-timing-function: linear;
 }
 //サムネイルスライド
-.works-gallery-thumbs {
+.works-gallery__thumbs {
   width: 100%;
   padding: 0;
   margin-top: remf(32);
@@ -74,14 +74,12 @@
   }
 }
 
-.gallery__next-button,
-.gallery__prev-button {
-  width: remf(50);
-  height: remf(50);
-}
-
-.gallery__prev-button {
-  margin-left: remf(7);
+.works-gallery {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: remf(50);
+    height: remf(50);
+  }
 }
 
 .swiper-button-prev::after,
@@ -91,12 +89,4 @@
   content: "";
   height: 50px;
   margin: auto;
-  width: 50px;
-}
-.swiper-button-prev::after::after {
-  background-image: url(%3Csvg+xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22+width%3D%2250%22+height%3D%2250%22+viewBox%3D%220+0+50+50%22+fill%3D%22none%22%3E%0D%0A++++++++++++++%3Ccircle+cx%3D%2225%22+cy%3D%2225%22+r%3D%2225%22+transform%3D%22rotate%28-180+25+25%29%22+fill%3D%22%23111111%22+%2F%3E%0D%0A++++++++++++++%3Cpath+d%3D%22M31+38L18+24.5L31+11%22+stroke%3D%22%23FFEA2E%22+stroke-width%3D%223%22+stroke-linecap%3D%22round%22%0D%0A++++++++++++++++stroke-linejoin%3D%22round%22+%2F%3E);
-}
-
-.gallery__next-button {
-  margin-right: remf(7);
 }

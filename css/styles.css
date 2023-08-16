@@ -3357,7 +3357,7 @@ letter-spacing: 2px; */
           transition-timing-function: linear;
 }
 
-.works-gallery-thumbs {
+.works-gallery__thumbs {
   width: 100%;
   padding: 0;
   margin-top: 32px;
@@ -3365,11 +3365,11 @@ letter-spacing: 2px; */
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
-  .works-gallery-thumbs {
+  .works-gallery__thumbs {
     margin-top: 2.5rem;
   }
 }
-.works-gallery-thumbs .swiper-slide {
+.works-gallery__thumbs .swiper-slide {
   width: 163px;
   width: 10.1875rem;
   height: 163px;
@@ -3381,35 +3381,30 @@ letter-spacing: 2px; */
   opacity: 0.5;
 }
 @media screen and (min-width: 768px) {
-  .works-gallery-thumbs .swiper-slide {
+  .works-gallery__thumbs .swiper-slide {
     width: 5.8125rem;
     height: 5.8125rem;
   }
 }
-.works-gallery-thumbs .swiper-slide-active {
+.works-gallery__thumbs .swiper-slide-active {
   opacity: 1;
 }
-.works-gallery-thumbs .swiper-slide img {
+.works-gallery__thumbs .swiper-slide img {
   width: auto;
   aspect-ratio: 163/163;
 }
 @media screen and (min-width: 768px) {
-  .works-gallery-thumbs .swiper-slide img {
+  .works-gallery__thumbs .swiper-slide img {
     aspect-ratio: 93/93;
   }
 }
 
-.gallery__next-button,
-.gallery__prev-button {
+.works-gallery .swiper-button-prev,
+.works-gallery .swiper-button-next {
   width: 50px;
   width: 3.125rem;
   height: 50px;
   height: 3.125rem;
-}
-
-.gallery__prev-button {
-  margin-left: 7px;
-  margin-left: 0.4375rem;
 }
 
 .swiper-button-prev::after,
@@ -3419,16 +3414,6 @@ letter-spacing: 2px; */
   content: "";
   height: 50px;
   margin: auto;
-  width: 50px;
-}
-
-.swiper-button-prev::after::after {
-  background-image: url(%3Csvg+xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22+width%3D%2250%22+height%3D%2250%22+viewBox%3D%220+0+50+50%22+fill%3D%22none%22%3E%0D%0A++++++++++++++%3Ccircle+cx%3D%2225%22+cy%3D%2225%22+r%3D%2225%22+transform%3D%22rotate%28-180+25+25%29%22+fill%3D%22%23111111%22+%2F%3E%0D%0A++++++++++++++%3Cpath+d%3D%22M31+38L18+24.5L31+11%22+stroke%3D%22%23FFEA2E%22+stroke-width%3D%223%22+stroke-linecap%3D%22round%22%0D%0A++++++++++++++++stroke-linejoin%3D%22round%22+%2F%3E);
-}
-
-.gallery__next-button {
-  margin-right: 7px;
-  margin-right: 0.4375rem;
 }
 
 .works-layout {
