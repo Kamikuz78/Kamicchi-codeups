@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.works-detail-list-layout {
+  margin-top: remf(54);
+  @include mq(md) {
+    margin-top: remf(103);
+  }
+}
