@@ -6,10 +6,3 @@
     margin-top: remf(104);
   }
 }
-
-.pagination-layout.pagination--detail {
-  margin-top: remf(80);
-  @include mq(md) {
-    margin-top: remf(104);
-  }
-}

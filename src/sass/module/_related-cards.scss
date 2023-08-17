@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.blog-cards--related {
+.related-cards {
   display: grid;
   gap: remf(24) remf(25);
   @include mq(md) {
