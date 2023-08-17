@@ -17,7 +17,7 @@
 }
 
 .related-article__cards {
-  margin-top: remf(36);
+  margin-top: remf(30);
   @include mq(md) {
     margin-top: remf(80);
   }
