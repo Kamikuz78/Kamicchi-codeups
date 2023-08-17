@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- meta情報 -->
+  <title>CodeUps｜</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="robots" content="noindex">
+  <!-- ogp -->
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <!-- ファビコン -->
+  <!-- <link rel="”icon”" href="#" > -->
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="./js/swiper.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+  <header class="header header-layout js-header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="./" class="header__link">
+          <img src="images/common/CodeUps.svg" alt="CodeUps">
+          <span class="visually-hidden">CodeUps</span>
+        </a>
+      </div>
+      <button title="ナビゲーションメニューを開く" class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header__pc-nav pc-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item">
+            <a href="home.html">お知らせ</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="page-content.html">事業内容</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="page-works.html">制作実績</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="page-overview.html">企業概要</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="page-blog.html">ブログ</a>
+          </li>
+          <li class="pc-nav__item pc-nav__item--white">
+            <a href="page-contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="header__drawer drawer js-drawer">
+        <ul class="drawer__items">
+          <li class="drawer__item">
+            <a href="./">トップ</a>
+          </li>
+          <li class="drawer__item">
+            <a href="home.html">お知らせ</a>
+          </li>
+          <li class="drawer__item">
+            <a href="page-content.html">事業内容</a>
+          </li>
+          <li class="drawer__item">
+            <a href="page-works.html">制作実績</a>
+          </li>
+          <li class="drawer__item">
+            <a href="page-overview.html">企業概要</a>
+          </li>
+          <li class="drawer__item">
+            <a href="page-blog.html">ブログ</a>
+          </li>
+          <li class="drawer__item">
+            <a href="page-contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+
+    <!-- パンくずリスト セクション -->
+    <div class="breadcrumb breadcrumb-layout breadcrumb-layout--mvless">
+      <div class="breadcrumb__inner inner">
+        <span><a href="./">トップ</a></span>
+        &gt;
+        <span><a href="page-works.html">制作実績</a></span>
+        &gt;
+        <span>制作実績詳細</span>
+      </div>
+    </div>
+
+    <!-- 制作実績詳細 -->
+    <section class="single-body single-body-layout single-body-layout--works">
+      <div class="single-body__inner">
+        <div class="single-body__items">
+          <div class="single-body__title">
+            <h1>〇〇株式会社様 制作実績</h1>
+          </div>
+          <div class="single-body__meta common-meta">
+            <div class="common-meta__info">
+              <time datetime="2023-07-16" class="common-meta__date">2023.07.16</time>
+              <div class="common-meta__category">カテゴリ１</div>
+            </div>
+          </div>
+
+          <!-- 制作実績ギャラリー -->
+          <div class="works-gallery works-gallery-layout">
+            <div class="works-gallery__body">
+              <div class="swiper works-gallery__slider js-gallery__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/common/p-works_detail_01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_03.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_04.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_05.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_06.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_07.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_08.jpg" alt=""></div>
+                </div>
+                <div class="works-gallery__prev-button swiper-button-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <circle cx="25" cy="25" r="25" transform="rotate(-180 25 25)" fill="#111111" />
+                    <path d="M31 38L18 24.5L31 11" stroke="#FFEA2E" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="works-gallery__next-button swiper-button-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <circle cx="25" cy="25" r="25" fill="#111111" />
+                    <path d="M19 12L32 25.5L19 39" stroke="#FFEA2E" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="swiper works-gallery__thumbs js-gallery__thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/common/p-works_detail_01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_03.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_04.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_05.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_06.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_07.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/common/blog-card_08.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 製作実績 ポイント -->
+          <div class="works-detail-list works-detail-list-layout">
+            <div class="works-detail-list__item works-point">
+              <div class="works-point__title">
+                <h3>制作のポイント</h3>
+              </div>
+              <div class="works-point__text">
+                <p>
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+            <div class="works-detail-list__item works-point">
+              <div class="works-point__title">
+                <h3>デザインのポイント</h3>
+              </div>
+              <div class="works-point__text">
+                <p>
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+            <div class="works-detail-list__item works-point">
+              <div class="works-point__title">
+                <h3>その他</h3>
+              </div>
+              <div class="works-point__text">
+                <p>
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ページナビゲーション -->
+    <div class="pagination pagination-layout pagination--detail wp-pagenavi">
+      <a class="previouspostslink" href="page-works.html">PREV</a>
+      <span class="current">一覧</span>
+      <a class="nextpostslink" href="page-works.html">NEXT</a>
+    </div>
+
+    <!-- 関連記事 -->
+    <section class="related-article related-article-layout">
+      <div class="related-article__inner inner">
+        <div class="related-article__headline">
+          <p>関連記事</p>
+        </div>
+
+        <!-- 関連記事カード -->
+        <div class="related-article related-article-layout">
+          <div class="inner">
+            <div class="related-article__cards related-cards">
+              <!--related-card -->
+              <a href="page-blog-detail.html" class="related-cards__item related-card">
+                <div class="related-card__img">
+                  <img src="images/common/blog-card_06.jpg" alt="タイピングしている手元の写真">
+                </div>
+                <div class="related-card__body">
+                  <h3 class="related-card__title">タイトルが入ります。タイトルが入ります。</h3>
+                  <p class="related-card__text">
+                    説明文が入ります。説明文が入ります。説明文が入ります。
+                  </p>
+                </div>
+                <div class="related-card__info info">
+                  <div class="info__category">カテゴリ</div>
+                  <time datetime="2023-04-19" class="info__date">2023.04.19</time>
+                </div>
+              </a>
+              <!--related-card -->
+              <a href="page-blog-detail.html" class="related-cards__item related-card">
+                <div class="related-card__img">
+                  <img src="images/common/blog-card_07.jpg" alt="デスクの上のノートパソコンの写真">
+                </div>
+                <div class="related-card__body">
+                  <h3 class="related-card__title">タイトルが入ります。タイトルが入ります。</h3>
+                  <p class="related-card__text">
+                    説明文が入ります。説明文が入ります。説明文が入ります。
+                  </p>
+                </div>
+                <div class="related-card__info info">
+                  <div class="info__category">カテゴリ</div>
+                  <time datetime="2023-04-19" class="info__date">2023.04.19</time>
+                </div>
+              </a>
+              <!--related-card -->
+              <a href="page-blog-detail.html" class="related-cards__item related-card">
+                <div class="related-card__img">
+                  <img src="images/common/blog-card_08.jpg" alt="開発ルームでパソコンに向かう女性の写真">
+                </div>
+                <div class="related-card__body">
+                  <h3 class="related-card__title">タイトルが入ります。タイトルが入ります。</h3>
+                  <p class="related-card__text">
+                    説明文が入ります。説明文が入ります。説明文が入ります。
+                  </p>
+                </div>
+                <div class="related-card__info info">
+                  <div class="info__category">カテゴリ</div>
+                  <time datetime="2023-04-19" class="info__date">2023.04.19</time>
+                </div>
+              </a>
+              <!--related-card -->
+              <a href="page-blog-detail.html" class="related-cards__item related-card">
+                <div class="related-card__img">
+                  <img src="images/common/blog-card_09.jpg" alt="暗めの室内でバックライトでてらされたモニターの写真">
+                </div>
+                <div class="related-card__body">
+                  <h3 class="related-card__title">タイトルが入ります。タイトルが入ります。</h3>
+                  <p class="related-card__text">
+                    説明文が入ります。説明文が入ります。説明文が入ります。
+                  </p>
+                </div>
+                <div class="related-card__info info">
+                  <div class="info__category">カテゴリ</div>
+                  <time datetime="2023-04-19" class="info__date">2023.04.19</time>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact contact-layout--sub">
+      <div class="contact__header section-title">
+        <h3 class="contact__title main-title">お問い合わせ</h3>
+        <p class="contact__subtitle subtitle--left sub-title">contact</p>
+      </div>
+      <div class="contact__inner inner">
+        <div class="contact__text">
+          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </div>
+        <div class="contact__button-wrapper">
+          <a href="page-contact.html" class="common-button">お問い合わせへ</a>
+        </div>
+      </div>
+    </section><!-- /contact -->
+  </main>
+
+  <!-- footer -->
+  <footer class="footer footer-layout">
+    <div class="footer__inner">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="images/common/CodeUps2.svg" alt="CodeUps">
+        </div>
+        <ul class="footer__items">
+
+          <li class="footer__item">
+            <a href="home.html">お知らせ</a>
+          </li>
+          <li class="footer__item">
+            <a href="page-content.html">事業内容</a>
+          </li>
+          <li class="footer__item">
+            <a href="page-works.html">制作実績</a>
+          </li>
+          <li class="footer__item">
+            <a href="page-overview.html">企業概要</a>
+          </li>
+          <li class="footer__item">
+            <a href="page-blog.html">ブログ</a>
+          </li>
+          <li class="footer__item">
+            <a href="page-contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright"><small>&copy; 2023 CodeUps Inc.</small></div>
+    </div>
+  </footer><!-- /footer -->
+  <a href="#body" class="top-button top-button-layout js-top-button">サイトのトップに戻る</a>
+
+</body>
+
+</html>
