@@ -16,3 +16,25 @@
     gap: remf(114) remf(48);
   }
 }
+
+.works-cards--related {
+  display: grid;
+  gap: remf(49) remf(48);
+  margin-top: remf(30);
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: remf(80);
+    gap: remf(32) remf(32);
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+.works-cards--related {
+  .works-card__title {
+    @include mq(md) {
+      font-size: remf(14);
+    }
+  }
+}
