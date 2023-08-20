@@ -1,16 +1,16 @@
 @use "global" as *;
 
 .contact-layout {
-  margin-top: remf(120);
+  margin-top: prem(120);
   @include mq(md) {
-    margin-top: remf(150);
+    margin-top: prem(150);
   }
 }
 
 .contact-layout--sub {
-  margin-top: remf(120);
+  margin-top: prem(120);
   @include mq(md) {
-    margin-top: remf(149);
-    margin-bottom: remf(0);
+    margin-top: prem(149);
+    margin-bottom: prem(0);
   }
 }

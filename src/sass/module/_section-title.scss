@@ -6,34 +6,34 @@
   max-width: $inner;
   margin: 0 auto;
   @include mq(md) {
-    max-width: remf(1150);
+    max-width: prem(1150);
     padding: 0 25px;
   }
 }
 
 .main-title {
-  font-size: remf(20);
+  font-size: prem(20);
   letter-spacing: calc(2 / 20) * 1em;
   text-align: center;
   font-weight: $regular;
   @include mq(md) {
-    font-size: remf(30);
-    letter-spacing: remf(2);
+    font-size: prem(30);
+    letter-spacing: prem(2);
   }
 }
 
 .main-title.main-title--sub {
-  font-size: remf(25);
+  font-size: prem(25);
   @include mq(md) {
-    font-size: remf(30);
+    font-size: prem(30);
   }
 }
 
 .sub-title {
-  font-size: remf(50);
+  font-size: prem(50);
   font-family: $second-font-family;
   color: $yellow;
-  letter-spacing: remf(2);
+  letter-spacing: prem(2);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -42,10 +42,10 @@
   z-index: -1;
   font-weight: $regular;
   @include mq(md) {
-    font-size: remf(110);
+    font-size: prem(110);
     transform: initial;
     left: 0;
-    padding: 0 remf(25);
+    padding: 0 prem(25);
   }
 }
 

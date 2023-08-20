@@ -2,10 +2,10 @@
 
 .blog-cards--related {
   display: grid;
-  gap: remf(24) remf(25);
+  gap: prem(24) prem(25);
   @include mq(md) {
     grid-template-columns: repeat(4, 1fr);
-    gap: remf(32) remf(32);
+    gap: prem(32) prem(32);
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;

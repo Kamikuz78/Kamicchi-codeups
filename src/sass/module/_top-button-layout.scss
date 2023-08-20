@@ -1,22 +1,22 @@
 @use "global" as *;
 
 .top-button-layout {
-  width: remf(45);
-  height: remf(45);
+  width: prem(45);
+  height: prem(45);
   position: fixed;
-  bottom: remf(41);
-  right: remf(22);
+  bottom: prem(41);
+  right: prem(22);
   z-index: 99;
   @include mq(md) {
-    bottom: remf(32);
-    right: remf(31);
+    bottom: prem(32);
+    right: prem(31);
   }
 }
 
 .top-button-layout.top-button-layout--sub {
-  right: remf(21);
+  right: prem(21);
   @include mq(md) {
-    right: remf(32);
-    bottom: remf(27);
+    right: prem(32);
+    bottom: prem(27);
   }
 }

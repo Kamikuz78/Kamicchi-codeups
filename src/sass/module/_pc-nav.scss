@@ -17,12 +17,12 @@
   text-align: center;
   display: grid;
   place-items: center;
-  padding: 0 remf(15);
+  padding: 0 prem(15);
   letter-spacing: calc(2 / 16) * 1em;
   position: relative;
 }
 .pc-nav__item:last-child a {
-  padding: 0 remf(31);
+  padding: 0 prem(31);
 }
 
 .pc-nav__item--white {
@@ -34,7 +34,7 @@
   @include mq(md) {
     // transition: all 0.5s ease 0s;
     transition: 0.3s;
-    margin-left: remf(15);
+    margin-left: prem(15);
   }
 }
 
@@ -73,9 +73,9 @@ li:not(:last-child).pc-nav__item a::after {
   transform: translate(-50%, -50%);
   content: "";
   width: calc(100% - 1rem);
-  height: remf(1);
+  height: prem(1);
   background: #ffea2e;
-  bottom: remf(6);
+  bottom: prem(6);
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;

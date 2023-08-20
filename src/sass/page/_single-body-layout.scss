@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .single-body-layout {
-  margin-top: remf(76);
+  margin-top: prem(76);
   @include mq(md) {
-    margin-top: remf(88);
+    margin-top: prem(88);
   }
 }
 
 .single-body-layout--works {
-  margin-top: remf(50);
+  margin-top: prem(50);
   @include mq(md) {
-    margin-top: remf(88);
+    margin-top: prem(88);
   }
 }

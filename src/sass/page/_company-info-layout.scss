@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .company-info-layout {
-  margin-top: remf(86);
+  margin-top: prem(86);
   @include mq(md) {
-    margin-top: remf(146);
+    margin-top: prem(146);
   }
 }

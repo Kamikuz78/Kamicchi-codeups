@@ -2,29 +2,29 @@
 
 .works-cards {
   align-items: center;
-  margin-top: remf(16);
+  margin-top: prem(16);
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   display: grid;
-  gap: remf(49) remf(48);
+  gap: prem(49) prem(48);
   @include mq(md) {
-    margin-top: remf(40);
+    margin-top: prem(40);
     margin-right: auto;
     margin-left: auto;
-    max-width: remf(1200);
+    max-width: prem(1200);
     grid-template-columns: 1fr 1fr;
-    gap: remf(114) remf(48);
+    gap: prem(114) prem(48);
   }
 }
 
 .works-cards--related {
   display: grid;
-  gap: remf(49) remf(48);
-  margin-top: remf(30);
+  gap: prem(49) prem(48);
+  margin-top: prem(30);
   @include mq(md) {
     grid-template-columns: repeat(4, 1fr);
-    margin-top: remf(80);
-    gap: remf(32) remf(32);
+    margin-top: prem(80);
+    gap: prem(32) prem(32);
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
@@ -34,7 +34,7 @@
 .works-cards--related {
   .works-card__title {
     @include mq(md) {
-      font-size: remf(14);
+      font-size: prem(14);
     }
   }
 }

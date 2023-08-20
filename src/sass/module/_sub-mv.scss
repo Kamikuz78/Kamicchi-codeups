@@ -2,9 +2,9 @@
 
 .sub-mv {
   position: relative;
-  height: remf(425);
+  height: prem(425);
   @include mq(md) {
-    height: remf(370);
+    height: prem(370);
   }
 }
 
@@ -22,13 +22,13 @@
   z-index: 1;
   text-align: center;
   width: 100%;
-  font-size: remf(30);
-  letter-spacing: remf(2);
+  font-size: prem(30);
+  letter-spacing: prem(2);
   line-height: 1;
   font-weight: $bold;
   @include mq(md) {
     top: 48%;
-    font-size: remf(35);
+    font-size: prem(35);
   }
 }
 

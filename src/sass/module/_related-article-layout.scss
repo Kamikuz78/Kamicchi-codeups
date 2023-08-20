@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .related-article-layout {
-  margin-top: remf(120);
+  margin-top: prem(120);
   @include mq(md) {
-    margin-top: remf(104);
+    margin-top: prem(104);
   }
 }

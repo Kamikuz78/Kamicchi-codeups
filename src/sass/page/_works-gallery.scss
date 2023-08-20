@@ -14,13 +14,13 @@
   height: auto;
   // margin: 0 0 10px 0;
   @include mq(md) {
-    width: remf(800);
+    width: prem(800);
   }
 
   .swiper-slide {
     width: 100%;
     @include mq(md) {
-      height: remf(427);
+      height: prem(427);
     }
 
     img {
@@ -41,22 +41,22 @@
 .works-gallery__thumbs {
   width: 100%;
   padding: 0;
-  margin-top: remf(32);
+  margin-top: prem(32);
   overflow: hidden;
   @include mq(md) {
-    margin-top: remf(40);
+    margin-top: prem(40);
   }
 
   .swiper-slide {
-    width: remf(163);
-    height: remf(163);
+    width: prem(163);
+    height: prem(163);
     flex-shrink: 0;
     text-align: center;
     overflow: hidden;
     opacity: 0.5;
     @include mq(md) {
-      width: remf(93);
-      height: remf(93);
+      width: prem(93);
+      height: prem(93);
     }
   }
 
@@ -77,8 +77,8 @@
 .works-gallery {
   .swiper-button-prev,
   .swiper-button-next {
-    width: remf(50);
-    height: remf(50);
+    width: prem(50);
+    height: prem(50);
   }
 }
 

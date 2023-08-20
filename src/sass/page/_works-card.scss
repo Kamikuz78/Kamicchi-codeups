@@ -9,8 +9,8 @@
 .works-card__category {
   background-color: $black;
   color: $white;
-  padding: remf(12) remf(20);
-  letter-spacing: remf(2);
+  padding: prem(12) prem(20);
+  letter-spacing: prem(2);
   line-height: 1;
   position: absolute;
   z-index: 1;
@@ -19,14 +19,14 @@
 }
 
 .works-card__title {
-  margin-top: remf(22);
+  margin-top: prem(22);
   width: 100%;
   text-align: center;
-  font-size: remf(20);
+  font-size: prem(20);
   font-weight: $medium;
-  letter-spacing: remf(2);
+  letter-spacing: prem(2);
   line-height: 1.75;
   @include mq(md) {
-    margin-top: remf(11);
+    margin-top: prem(11);
   }
 }

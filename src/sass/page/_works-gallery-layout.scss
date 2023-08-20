@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .works-gallery-layout {
-  margin-top: remf(16);
+  margin-top: prem(16);
   @include mq(md) {
-    margin-top: remf(32);
+    margin-top: prem(32);
   }
 }

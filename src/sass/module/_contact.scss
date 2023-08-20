@@ -2,9 +2,9 @@
 
 .contact {
   background-color: #3d3d3d;
-  padding: remf(73) 0 remf(64);
+  padding: prem(73) 0 prem(64);
   @include mq(md) {
-    padding: remf(154) 0 remf(149);
+    padding: prem(154) 0 prem(149);
   }
 }
 
@@ -14,9 +14,9 @@
 }
 
 .contact__subtitle {
-  top: remf(-42);
+  top: prem(-42);
   @include mq(md) {
-    top: remf(-72);
+    top: prem(-72);
   }
 }
 
@@ -25,42 +25,42 @@
 }
 
 .contact__text {
-  margin-top: remf(23);
+  margin-top: prem(23);
   letter-spacing: calc(2 / 16) * 1em;
   line-height: calc(23.17 / 16);
   @include mq(md) {
-    margin-top: remf(24);
+    margin-top: prem(24);
     text-align: center;
   }
 }
 
 .contact__text.contact__text--sub {
   @include mq(md) {
-    margin-top: remf(31);
+    margin-top: prem(31);
   }
 }
 
 .contact__button-wrapper {
   text-align: center;
-  margin-top: remf(47);
+  margin-top: prem(47);
   @include mq(md) {
-    margin-top: remf(60);
+    margin-top: prem(60);
   }
 }
 
 .contact__button-wrapper.contact__button-wrapper--sub {
-  margin-top: remf(43);
+  margin-top: prem(43);
   @include mq(md) {
-    margin-top: remf(54);
+    margin-top: prem(54);
   }
 }
 
 .sub-contact {
   background-color: #3d3d3d;
-  padding: remf(73) 0 remf(64);
+  padding: prem(73) 0 prem(64);
   @include mq(md) {
-    padding-top: remf(150);
-    padding-bottom: remf(150);
+    padding-top: prem(150);
+    padding-bottom: prem(150);
   }
 }
 
@@ -69,22 +69,22 @@
   z-index: 1;
 }
 .sub-contact__subtitle {
-  top: remf(-36);
+  top: prem(-36);
   @include mq(md) {
-    top: remf(-72);
+    top: prem(-72);
   }
 }
 
 .sub-contact__title {
-  font-size: remf(25);
+  font-size: prem(25);
 }
 
 .sub-contact__text {
-  margin-top: remf(20);
+  margin-top: prem(20);
   letter-spacing: calc(2 / 16) * 1em;
   line-height: calc(23.17 / 16);
   @include mq(md) {
-    margin-top: remf(35);
+    margin-top: prem(35);
     text-align: center;
   }
 }
@@ -95,8 +95,8 @@
 
 .sub-contact__button-wrapper {
   text-align: center;
-  margin-top: remf(47);
+  margin-top: prem(47);
   @include mq(md) {
-    margin-top: remf(54);
+    margin-top: prem(54);
   }
 }

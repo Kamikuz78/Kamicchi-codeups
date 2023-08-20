@@ -1,21 +1,21 @@
 @use "global" as *;
 
 .archive-home {
-  margin-top: remf(84);
+  margin-top: prem(84);
   @include mq(md) {
-    margin-top: remf(69);
+    margin-top: prem(69);
   }
 }
 
 .archive-home__inner.inner {
-  max-width: remf(910);
+  max-width: prem(910);
 }
 
 .archive-home__items {
   display: grid;
-  row-gap: remf(25);
+  row-gap: prem(25);
   @include mq(md) {
-    row-gap: remf(33);
+    row-gap: prem(33);
   }
 }
 

@@ -2,7 +2,7 @@
 
 .common__item {
   width: 100%;
-  max-width: remf(600);
+  max-width: prem(600);
   margin-right: auto;
   margin-left: auto;
   @include mq(md) {
@@ -29,7 +29,7 @@
     aspect-ratio: 557/389;
     height: auto;
     width: 50.6%;
-    margin: 0 remf(31) 0 0;
+    margin: 0 prem(31) 0 0;
   }
 }
 
@@ -43,7 +43,7 @@
   }
 }
 .common__item-text-box {
-  padding: remf(24) remf(20) remf(22);
+  padding: prem(24) prem(20) prem(22);
   background: $gray;
   @include mq(md) {
     margin-top: 0;
@@ -54,42 +54,42 @@
 }
 
 .common__title {
-  font-size: remf(20);
+  font-size: prem(20);
   text-align: center;
   font-weight: normal;
   width: 100%;
   text-align: center;
   margin: 0 auto;
   line-height: calc(29 / 20);
-  letter-spacing: remf(2);
+  letter-spacing: prem(2);
   @include mq(md) {
-    margin-top: remf(34);
+    margin-top: prem(34);
     text-align: left;
-    font-size: remf(25);
+    font-size: prem(25);
     line-height: 1;
-    letter-spacing: remf(0.5);
+    letter-spacing: prem(0.5);
   }
 }
 
 .common__text {
-  margin-top: remf(24);
+  margin-top: prem(24);
   line-height: calc(23 / 16);
-  letter-spacing: remf(2);
+  letter-spacing: prem(2);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   @include mq(md) {
-    margin-top: remf(44);
+    margin-top: prem(44);
     line-height: calc(35 / 16);
-    letter-spacing: remf(0.5);
+    letter-spacing: prem(0.5);
   }
 }
 
 .common__button-wrapper {
-  margin-top: remf(26);
+  margin-top: prem(26);
   text-align: center;
   @include mq(md) {
-    margin-top: remf(48);
+    margin-top: prem(48);
     text-align: left;
   }
 }

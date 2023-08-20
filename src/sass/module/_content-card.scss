@@ -43,7 +43,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: left remf(-15);
+  object-position: left prem(-15);
   @include mq(md) {
     object-position: initial;
   }
@@ -55,16 +55,16 @@
 
 .content-card__title {
   color: $white;
-  font-size: remf(20);
+  font-size: prem(20);
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
   text-align: center;
-  letter-spacing: remf(2);
+  letter-spacing: prem(2);
   line-height: calc(29 / 28);
   transform: translate(-50%, -50%);
   @include mq(md) {
-    font-size: remf(25);
+    font-size: prem(25);
   }
 }

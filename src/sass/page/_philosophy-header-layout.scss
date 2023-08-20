@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .philosophy-header-layout {
-  margin-top: remf(84);
+  margin-top: prem(84);
   @include mq(md) {
-    margin-top: remf(69);
+    margin-top: prem(69);
   }
 }

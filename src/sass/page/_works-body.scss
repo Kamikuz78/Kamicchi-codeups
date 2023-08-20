@@ -1,19 +1,19 @@
 @use "global" as *;
 
 .works-body__title h1 {
-  font-size: remf(20);
-  line-height: remf(35);
+  font-size: prem(20);
+  line-height: prem(35);
   font-weight: $regular;
-  letter-spacing: remf(0.4);
+  letter-spacing: prem(0.4);
   @include mq(md) {
-    font-size: remf(23);
+    font-size: prem(23);
     font-weight: $medium;
   }
 }
 
 .works-body__meta {
-  margin-top: remf(14);
+  margin-top: prem(14);
   @include mq(md) {
-    margin-top: remf(31);
+    margin-top: prem(31);
   }
 }

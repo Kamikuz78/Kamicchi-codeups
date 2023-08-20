@@ -2,10 +2,10 @@
 
 .circle {
   display: inline-block;
-  width: remf(60);
-  height: remf(60);
+  width: prem(60);
+  height: prem(60);
   border-radius: 50%;
   background: #ffba6a;
   text-align: center;
-  line-height: remf(80);
+  line-height: prem(80);
 }

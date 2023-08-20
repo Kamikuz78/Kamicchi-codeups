@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .pagination-layout {
-  margin-top: remf(77);
+  margin-top: prem(77);
   @include mq(md) {
-    margin-top: remf(104);
+    margin-top: prem(104);
   }
 }
 
 .pagination-layout.pagination--detail {
-  margin-top: remf(80);
+  margin-top: prem(80);
   @include mq(md) {
-    margin-top: remf(104);
+    margin-top: prem(104);
   }
 }

@@ -7,23 +7,23 @@
 }
 
 .blog-card__body {
-  padding-top: remf(3);
-  padding-left: remf(23);
-  padding-right: remf(23);
-  letter-spacing: remf(1);
+  padding-top: prem(3);
+  padding-left: prem(23);
+  padding-right: prem(23);
+  letter-spacing: prem(1);
   font-weight: $regular;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   @include mq(md) {
-    padding-top: remf(4);
+    padding-top: prem(4);
   }
 }
 
 .blog-card__img {
   width: 100%;
-  // max-width: remf(350);
+  // max-width: prem(350);
 }
 
 .blog-card__img img {
@@ -36,48 +36,48 @@
 }
 
 .blog-card__title {
-  font-size: remf(18);
+  font-size: prem(18);
   font-weight: $medium;
   text-align: left;
   width: 100%;
   line-height: 2;
-  letter-spacing: remf(1);
+  letter-spacing: prem(1);
   @include mq(md) {
     line-height: 2;
   }
 }
 
 .blog-card__text {
-  font-size: remf(14);
-  margin-top: remf(1);
-  line-height: remf(26);
+  font-size: prem(14);
+  margin-top: prem(1);
+  line-height: prem(26);
   text-align: left;
-  letter-spacing: remf(1);
+  letter-spacing: prem(1);
   flex-grow: 1;
   @include mq(md) {
-    margin-top: remf(4);
+    margin-top: prem(4);
     line-height: 2;
   }
 }
 
 .blog-card__info {
   margin-top: auto;
-  padding: remf(7) remf(23) remf(16);
+  padding: prem(7) prem(23) prem(16);
   @include mq(md) {
-    padding: remf(5) remf(23) remf(16);
+    padding: prem(5) prem(23) prem(16);
   }
 }
 
 .related-article__cards {
   .blog-card__body {
-    padding-top: remf(3);
-    padding-left: remf(23);
-    padding-right: remf(23);
+    padding-top: prem(3);
+    padding-left: prem(23);
+    padding-right: prem(23);
     @include mq(md) {
-      padding-top: remf(4);
-      padding-top: remf(3);
-      padding-left: remf(8);
-      padding-right: remf(8);
+      padding-top: prem(4);
+      padding-top: prem(3);
+      padding-left: prem(8);
+      padding-right: prem(8);
     }
   }
 
@@ -89,22 +89,22 @@
 
   .blog-card__title {
     @include mq(md) {
-      font-size: remf(14);
+      font-size: prem(14);
     }
   }
 
   .blog-card__text {
-    font-size: remf(14);
-    margin-top: remf(1);
-    line-height: remf(26);
+    font-size: prem(14);
+    margin-top: prem(1);
+    line-height: prem(26);
     text-align: left;
   }
 
   .blog-card__info {
     margin-top: auto;
-    padding: remf(7) remf(23) remf(16);
+    padding: prem(7) prem(23) prem(16);
     @include mq(md) {
-      padding: remf(3) remf(8) remf(14);
+      padding: prem(3) prem(8) prem(14);
     }
   }
 }

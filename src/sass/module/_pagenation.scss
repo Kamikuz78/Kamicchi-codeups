@@ -16,7 +16,7 @@
   white-space: nowrap;
   text-align: center;
   text-decoration: none;
-  font-size: remf(16);
+  font-size: prem(16);
   @include mq(md) {
     transition: 0.2s ease-in-out;
   }
@@ -25,8 +25,8 @@
 .wp-pagenavi a.page.smaller,
 .wp-pagenavi a.page.larger,
 .wp-pagenavi span.current {
-  padding: remf(3) remf(7);
-  margin: 0 remf(6);
+  padding: prem(3) prem(7);
+  margin: 0 prem(6);
 }
 
 .wp-pagenavi a:hover {
@@ -36,12 +36,12 @@
 
 .wp-pagenavi a.previouspostslink,
 .wp-pagenavi a.nextpostslink {
-  padding: remf(3) remf(10);
+  padding: prem(3) prem(10);
 }
 .previouspostslink,
 .nextpostslink,
 .pagination--detail .current {
-  min-width: remf(71);
+  min-width: prem(71);
 }
 
 .wp-pagenavi span.current {
@@ -51,16 +51,16 @@
 }
 
 .pagination--list .previouspostslink {
-  margin-right: remf(14);
+  margin-right: prem(14);
 }
 
 .pagination--list .nextpostslink {
-  margin-left: remf(14);
+  margin-left: prem(14);
 }
 .pagination--detail .previouspostslink {
-  margin-right: remf(48);
+  margin-right: prem(48);
 }
 
 .pagination--detail .nextpostslink {
-  margin-left: remf(48);
+  margin-left: prem(48);
 }

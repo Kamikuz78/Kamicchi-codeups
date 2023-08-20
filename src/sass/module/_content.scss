@@ -4,29 +4,29 @@
   content: "";
   display: block;
   position: absolute;
-  top: remf(-36);
+  top: prem(-36);
   transform-origin: top left;
   background-color: $yellow;
-  width: remf(1);
+  width: prem(1);
   height: calc(778 / 375) * 95vw;
   transform: rotate(-28.91deg);
   z-index: -1;
   @include mq(md) {
     height: calc(1714 / 1280) * 100vw;
     transform: rotate(-45deg);
-    top: remf(-110);
+    top: prem(-110);
   }
 }
 
 .content__subtitle {
-  top: remf(-43);
+  top: prem(-43);
   @include mq(md) {
-    top: remf(-23);
+    top: prem(-23);
   }
 }
 
 .content__body {
-  margin-top: remf(52);
+  margin-top: prem(52);
 }
 
 .content__inner {

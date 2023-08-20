@@ -4,13 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: remf(14);
+  font-size: prem(14);
   line-height: calc(26 / 14);
 }
 
 .info__category {
   background-color: #ffea2e;
   color: $black;
-  padding: 0 remf(5);
+  padding: 0 prem(5);
   letter-spacing: calc(1 / 14) * 1em;
 }

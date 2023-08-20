@@ -6,9 +6,9 @@
 }
 
 .works-point + .works-point {
-  margin-top: remf(56);
+  margin-top: prem(56);
   @include mq(md) {
-    margin-top: remf(72);
+    margin-top: prem(72);
   }
 }
 .works-point__title {
@@ -16,14 +16,14 @@
   border-radius: 32px;
   border: 1px solid #fff;
   background: #111;
-  padding: remf(8) remf(24);
-  margin-left: remf(24);
+  padding: prem(8) prem(24);
+  margin-left: prem(24);
   position: absolute;
   top: 0;
-  left: remf(-17);
+  left: prem(-17);
   transform: translateY(-50%) translateX(1em);
   @include mq(md) {
-    margin-left: remf(41);
+    margin-left: prem(41);
   }
 }
 
@@ -33,12 +33,12 @@
 }
 
 .works-point__text {
-  // margin-top: remf(56);
+  // margin-top: prem(56);
   border: 1px solid #fff;
-  padding: remf(56) remf(9) remf(31);
-  letter-spacing: remf(0.4);
-  line-height: remf(35);
+  padding: prem(56) prem(9) prem(31);
+  letter-spacing: prem(0.4);
+  line-height: prem(35);
   @include mq(md) {
-    padding: remf(43) remf(23) remf(30);
+    padding: prem(43) prem(23) prem(30);
   }
 }

@@ -29,14 +29,14 @@
   text-align: center;
   line-height: 0.5;
   @include mq(md) {
-    padding-right: remf(38);
+    padding-right: prem(38);
   }
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: remf(-16);
+  bottom: prem(-16);
   @include mq(md) {
-    bottom: remf(-27);
+    bottom: prem(-27);
   }
 }
 .swiper-pagination-bullet {
@@ -44,5 +44,5 @@
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 remf(5.5);
+  margin: 0 prem(5.5);
 }
